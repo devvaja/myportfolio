@@ -1,0 +1,1607 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div id="main-content" class="site-main clearfix ">
+    <div id="themesflat-content" class="page-wrap ">
+
+
+        <div class="tfcl_message"></div>
+        <div
+                class="cards-container row hide-map no-sidebar sidebar-left">
+            <div
+                    class="col-md-12 listing-list-wrap">
+                <form method="get" action="https://motorxwp.themesflat.com/listing-default/"
+                      class="tfcl-my-listing-search">
+                    <input type="hidden" name="layout_archive_listing" id="layout_archive_listing"
+                           value="grid">
+                    <input type="hidden" name="column_layout" id="column_layout"
+                           value="4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>CARS FOR SALE...!!!!!</h2>
+<!--                            <p class="count-results">-->
+<!--                                There are currently <span class="count-result count-total">17</span> <span-->
+<!--                                    class="text-result">results</span></p>-->
+                        </div>
+<!--                        <div class="col-md-6 toolbar-search-list">-->
+<!--                            <div class="form-group">-->
+<!--                                <select name="sortby" id="listing_order_by" class="form-control"-->
+<!--                                        title="Sort By">-->
+<!--                                    <option value="default">-->
+<!--                                        Default sorting-->
+<!--                                    </option>-->
+<!--                                    <option value="name_asc">-->
+<!--                                        Sort by name ( A-Z)-->
+<!--                                    </option>-->
+<!--                                    <option value="name_desc">-->
+<!--                                        Sort by name ( Z-A)-->
+<!--                                    </option>-->
+<!--                                    <option value="price_asc">-->
+<!--                                        Sort by price: Low to High-->
+<!--                                    </option>-->
+<!--                                    <option value="price_desc">-->
+<!--                                        Sort by price: High to Low-->
+<!--                                    </option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <a class="btn btn-display-listing-grid"><i class="icon-motorx-grid-box"></i></a>-->
+<!--                            </div>-->
+<!--                            <div class="form-group">-->
+<!--                                <a class="btn btn-display-listing-list"><i class="icon-motorx-list-box"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+                </form>
+                <div class="group-card-item-listing row">
+                    {% for i in cars %}
+
+                    <div class="wrap-tfcl-listing-card cards-item col-xl-3 col-md-6 " data-col="col-xl-3 col-md-6">
+                        <div class="tfcl-listing-card">
+                            <div class="featured-property tfcl-image-map" title="Mercedes-Benz C-Class"
+                                 data-image="{{i.image.url}}"
+                                 data-id="3651"
+                                 data-location="1870 Tigerwood Court, Pine Hills, Florida 32818, United States"
+                                 data-price-prefix=""
+                                 data-price-suffix="" data-price="$44,850">
+                                <div class="group-meta">
+                                    <div class="inner">
+<!--                        <span class="count-list-gallery view-gallery" data-mfp-event-->
+<!--                              data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2023\/12\/crr-16-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-33-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-57-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-12-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-08-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-36-1-660x471.webp&quot;]"><img-->
+<!--                                src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/camera.svg' %}"-->
+<!--                                alt="icon-map"></span>-->
+                                    </div>
+                                    <span class="date-car">2014</span>
+                                </div>
+                                <a href="/car_details/{{i.id}}" title="{{ i.title }}">
+                                    <div class="listing-images">
+                                        <div class="hover-listing-image">
+                                            <div class="wrap-hover-listing">
+                                                <div class="listing-item" title="Mercedes-Benz C-Class" >
+                                                    <div class="images" >
+                                                        <img decoding="async"
+                                                             src={{i.image.url}}
+                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">
+                                                    </div>
+                                                </div>
+                                                <div class="listing-item" title="Mercedes-Benz C-Class">
+                                                    <div class="images">
+                                                        <img decoding="async"
+                                                             src={{i.image2.url}}
+                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">
+                                                    </div>
+                                                </div>
+                                                <div class="listing-item" title="Mercedes-Benz C-Class">
+                                                    <div class="images">
+                                                        <img decoding="async"
+                                                             src={{i.image3.url}}
+                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">
+                                                    </div>
+                                                </div>
+                                                <div class="listing-item view-gallery" data-mfp-event
+                                                     data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2023\/12\/crr-16-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-33-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-57-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-12-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-08-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-36-1-660x471.webp&quot;]"
+                                                     title="Mercedes-Benz C-Class">
+                                                    <div class="images">
+                                                        <img decoding="async"
+                                                             src={{i.image4.url}}
+                                                             class="swiper-image tfcl-light-gallery" alt="images">
+<!--                                                        <div class="overlay-limit">-->
+<!--                                                            <img decoding="async"-->
+<!--                                                                 src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/picture.svg' %}"-->
+<!--                                                                 class="icon-img" alt="icon-map">-->
+<!--                                                            <p>2 more photos</p>-->
+<!--                                                        </div>-->
+                                                    </div>
+                                                </div>
+                                                <div class="bullet-hover-listing">
+                                                    <div class="bl-item"></div>
+                                                    <div class="bl-item"></div>
+                                                    <div class="bl-item"></div>
+                                                    <div class="bl-item"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <a href="{% static '/body/convertible/index.html' %}" class="car-body">{{i.type}}</a>
+                                <h3 class="tfcl-listing-title">
+                                    <a title="Mercedes-Benz C-Class"
+                                       href="{% static '/listing/mercedes-benz-c-class/index.html' %}">{{i.name}}</a>
+                                </h3>
+                                <div class="price">
+                    <span class="inner regular_price">
+												 ₹{{ i.total_amount }}										</span>
+                                    <span class="inner sale_price">
+<!--												$59,900											</span>-->
+                                </div>
+                                <ul class="infor-description">
+                                    <li class="listing-information fuel">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"
+                                             viewBox="0 0 23 23" fill="none">
+                                            <g clip-path="url(#clip0_190_9250)">
+                                                <path d="M13.6562 4.3125C13.6562 3.91553 13.3345 3.59375 12.9375 3.59375H5.75C5.35303 3.59375 5.03125 3.91553 5.03125 4.3125V10.0625C5.03125 10.4595 5.35303 10.7812 5.75 10.7812H12.9375C13.3345 10.7812 13.6562 10.4595 13.6562 10.0625V4.3125ZM12.2188 9.34375H6.46875V5.03125H12.2188V9.34375Z"
+                                                      fill="black"/>
+                                                <path d="M21.9011 5.09652L19.0347 3.65902C18.6788 3.48073 18.2522 3.62569 18.0746 3.98048C17.897 4.33563 18.0431 4.76733 18.3982 4.94491L19.4898 5.49022C19.4606 5.56838 19.4229 5.65104 19.4229 5.73949C19.4229 6.6753 20.125 7.46566 20.8438 7.76326V16.5207C20.8438 16.9169 20.5212 17.2395 20.125 17.2395C19.7288 17.2395 19.4062 16.9169 19.4062 16.5207V10.7707C19.4062 9.03536 17.9688 7.58358 16.5312 7.24963V2.86449C16.5312 1.27924 15.2758 0 13.6906 0H5.06557C3.48032 0 2.15625 1.27924 2.15625 2.86449V18.9514L1.11604 19.4715C0.872473 19.5933 0.71875 19.8421 0.71875 20.1145V22.2707C0.71875 22.6677 1.07489 23 1.47182 23H17.2843C17.6812 23 17.9688 22.6677 17.9688 22.2707V20.1145C17.9688 19.8421 17.815 19.5933 17.5715 19.4715L16.5312 18.9514V8.74696C17.25 9.04457 17.9688 9.83493 17.9688 10.7707V16.5207C17.9688 17.7098 18.936 18.677 20.125 18.677C21.314 18.677 22.2812 17.7098 22.2812 16.5207V5.73949C22.2812 5.46713 22.1447 5.2183 21.9011 5.09652ZM16.5312 21.5625H2.15625V20.5588L3.19646 20.0387C3.44003 19.9169 3.59375 19.6681 3.59375 19.3957V2.86444C3.59375 2.07166 4.27274 1.4375 5.06557 1.4375H13.6906C14.4834 1.4375 15.0938 2.07166 15.0938 2.86449V19.3957C15.0938 19.6681 15.2475 19.9169 15.491 20.0387L16.5312 20.5588V21.5625Z"
+                                                      fill="black"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_190_9250">
+                                                    <rect width="23" height="23" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <div class="inner">
+                                            <span>Fuel type</span>
+                                            <p>{{i.fuel}}</p>
+                                        </div>
+                                    </li>
+                                    <li class="listing-information mileage">
+                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.1488 5.05304C15.8966 4.78761 15.5007 4.74847 15.2059 4.95992C14.0954 5.75671 8.52514 9.76339 7.92649 10.3935C7.05836 11.3074 7.05836 12.7943 7.92649 13.7081C8.36056 14.165 8.93078 14.3935 9.50093 14.3935C10.0711 14.3935 10.6413 14.165 11.0754 13.7081C11.674 13.078 15.4803 7.21453 16.2373 6.04554C16.4381 5.73527 16.4009 5.31855 16.1488 5.05304ZM10.0257 12.6032C9.73635 12.9079 9.26547 12.9079 8.97613 12.6032C8.68675 12.2987 8.68672 11.8032 8.97598 11.4985C9.20858 11.2566 10.7901 10.0693 12.7359 8.64562C11.3834 10.6938 10.2555 12.3585 10.0257 12.6032Z"
+                                                  fill="white"/>
+                                            <path d="M3.42263 15.6845L2.5064 16.155C1.83599 14.8955 1.48437 13.4898 1.48437 12.0508C1.48437 10.9964 1.66907 9.98664 2.00613 9.05535L3.05599 9.58543C3.15953 9.63769 3.26882 9.66246 3.37647 9.66246C3.65305 9.66246 3.91856 9.49898 4.04618 9.21891C4.22342 8.82988 4.06756 8.3632 3.69795 8.1766L2.66141 7.65324C3.94974 5.44152 6.17878 3.89953 8.75785 3.64914V4.82418C8.75785 5.25566 9.09013 5.60543 9.50004 5.60543C9.90995 5.60543 10.2422 5.25566 10.2422 4.82418V3.64855C11.1265 3.73328 11.9821 3.97031 12.7943 4.35625C13.1678 4.53379 13.6074 4.35883 13.7761 3.96566C13.9447 3.57238 13.7786 3.10969 13.405 2.93215C12.1742 2.34734 10.8604 2.05078 9.5 2.05078C6.96246 2.05078 4.57681 3.09094 2.78246 4.97969C0.988185 6.86848 0 9.37969 0 12.0508C0 14.0246 0.556566 15.9443 1.60954 17.6021C1.75138 17.8254 1.98587 17.9493 2.22701 17.9493C2.33663 17.9493 2.44766 17.9237 2.55197 17.8701L4.07346 17.0889C4.44188 16.8997 4.59484 16.432 4.41512 16.0442C4.2354 15.6564 3.79106 15.4954 3.42263 15.6845Z"
+                                                  fill="white"/>
+                                            <path d="M18.1629 7.94051C17.9942 7.54727 17.5548 7.37227 17.181 7.54989C16.8074 7.72743 16.6413 8.19012 16.81 8.58336C17.2784 9.67547 17.5158 10.8422 17.5158 12.051C17.5158 13.4922 17.1631 14.9002 16.4907 16.1611L15.5341 15.6816C15.1641 15.4961 14.7212 15.6614 14.5449 16.0511C14.3687 16.4406 14.5259 16.9068 14.8959 17.0923L16.4545 17.8736C16.5571 17.9249 16.6658 17.9495 16.7732 17.9495C17.0144 17.9495 17.249 17.8255 17.3906 17.6024C18.4436 15.9445 19.0002 14.0248 19.0002 12.051C19.0002 10.619 18.7185 9.23602 18.1629 7.94051Z"
+                                                  fill="white"/>
+                                        </svg>
+                                        <div class="inner">
+                                            <span>Mileage</span>
+                                            <p>26 km/ph</p>
+                                        </div>
+                                    </li>
+                                    <li class="listing-information transmission">
+                                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M3.16732 1.59375C1.96557 1.59375 0.990234 2.46642 0.990234 3.54167C0.990234 4.61692 1.96557 5.48958 3.16732 5.48958C4.36907 5.48958 5.3444 4.61692 5.3444 3.54167C5.3444 2.46642 4.36907 1.59375 3.16732 1.59375ZM3.16732 2.65625C3.71357 2.65625 4.1569 3.05292 4.1569 3.54167C4.1569 4.03042 3.71357 4.42708 3.16732 4.42708C2.62107 4.42708 2.17773 4.03042 2.17773 3.54167C2.17773 3.05292 2.62107 2.65625 3.16732 2.65625Z"
+                                                  fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M3.16732 11.5107C1.96557 11.5107 0.990234 12.3834 0.990234 13.4587C0.990234 14.5339 1.96557 15.4066 3.16732 15.4066C4.36907 15.4066 5.3444 14.5339 5.3444 13.4587C5.3444 12.3834 4.36907 11.5107 3.16732 11.5107ZM3.16732 12.5732C3.71357 12.5732 4.1569 12.9699 4.1569 13.4587C4.1569 13.9474 3.71357 14.3441 3.16732 14.3441C2.62107 14.3441 2.17773 13.9474 2.17773 13.4587C2.17773 12.9699 2.62107 12.5732 3.16732 12.5732Z"
+                                                  fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.5013 1.59375C8.29955 1.59375 7.32422 2.46642 7.32422 3.54167C7.32422 4.61692 8.29955 5.48958 9.5013 5.48958C10.7031 5.48958 11.6784 4.61692 11.6784 3.54167C11.6784 2.46642 10.7031 1.59375 9.5013 1.59375ZM9.5013 2.65625C10.0476 2.65625 10.4909 3.05292 10.4909 3.54167C10.4909 4.03042 10.0476 4.42708 9.5013 4.42708C8.95505 4.42708 8.51172 4.03042 8.51172 3.54167C8.51172 3.05292 8.95505 2.65625 9.5013 2.65625Z"
+                                                  fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M9.5013 11.5107C8.29955 11.5107 7.32422 12.3834 7.32422 13.4587C7.32422 14.5339 8.29955 15.4066 9.5013 15.4066C10.7031 15.4066 11.6784 14.5339 11.6784 13.4587C11.6784 12.3834 10.7031 11.5107 9.5013 11.5107ZM9.5013 12.5732C10.0476 12.5732 10.4909 12.9699 10.4909 13.4587C10.4909 13.9474 10.0476 14.3441 9.5013 14.3441C8.95505 14.3441 8.51172 13.9474 8.51172 13.4587C8.51172 12.9699 8.95505 12.5732 9.5013 12.5732Z"
+                                                  fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M15.8333 1.59375C14.6316 1.59375 13.6562 2.46642 13.6562 3.54167C13.6562 4.61692 14.6316 5.48958 15.8333 5.48958C17.0351 5.48958 18.0104 4.61692 18.0104 3.54167C18.0104 2.46642 17.0351 1.59375 15.8333 1.59375ZM15.8333 2.65625C16.3796 2.65625 16.8229 3.05292 16.8229 3.54167C16.8229 4.03042 16.3796 4.42708 15.8333 4.42708C15.2871 4.42708 14.8438 4.03042 14.8438 3.54167C14.8438 3.05292 15.2871 2.65625 15.8333 2.65625Z"
+                                                  fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M15.8333 11.5107C14.6316 11.5107 13.6562 12.3834 13.6562 13.4587C13.6562 14.5339 14.6316 15.4066 15.8333 15.4066C17.0351 15.4066 18.0104 14.5339 18.0104 13.4587C18.0104 12.3834 17.0351 11.5107 15.8333 11.5107ZM15.8333 12.5732C16.3796 12.5732 16.8229 12.9699 16.8229 13.4587C16.8229 13.9474 16.3796 14.3441 15.8333 14.3441C15.2871 14.3441 14.8438 13.9474 14.8438 13.4587C14.8438 12.9699 15.2871 12.5732 15.8333 12.5732Z"
+                                                  fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M2.57422 4.95801V12.0413C2.57422 12.3346 2.84022 12.5726 3.16797 12.5726C3.49572 12.5726 3.76172 12.3346 3.76172 12.0413V4.95801C3.76172 4.66476 3.49572 4.42676 3.16797 4.42676C2.84022 4.42676 2.57422 4.66476 2.57422 4.95801Z"
+                                                  fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M8.90625 4.95801V12.0413C8.90625 12.3346 9.17225 12.5726 9.5 12.5726C9.82775 12.5726 10.0938 12.3346 10.0938 12.0413V4.95801C10.0938 4.66476 9.82775 4.42676 9.5 4.42676C9.17225 4.42676 8.90625 4.66476 8.90625 4.95801Z"
+                                                  fill="white"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M15.2409 4.95801V7.79134C15.2409 7.88909 15.1522 7.96842 15.043 7.96842H3.16797C2.84022 7.96842 2.57422 8.20642 2.57422 8.49967C2.57422 8.79292 2.84022 9.03092 3.16797 9.03092H15.043C15.8085 9.03092 16.4284 8.47559 16.4284 7.79134C16.4284 6.75788 16.4284 4.95801 16.4284 4.95801C16.4284 4.66476 16.1624 4.42676 15.8346 4.42676C15.5069 4.42676 15.2409 4.66476 15.2409 4.95801Z"
+                                                  fill="white"/>
+                                        </svg>
+                                        <div class="inner">
+                                            <span>Transmission</span>
+                                            <p>Manual</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="bottom-content">
+                                    <div class="card-button">
+                                        <a title="Mercedes-Benz C-Class"
+                                           href="/listing/mercedes-benz-c-class/index.html" class="btn-listing">View
+                                            Details <i
+                                                    class="icon-motorx-readmore"></i></a>
+                                    </div>
+                                    <ul class="list-controller">
+                                        <li>
+                                            <a href="javascript:void(0)" class="tfcl-listing-favorite hv-tool "
+                                               data-tfcl-car-id="3651" data-toggle="tooltip"
+                                               data-tooltip="Add to Favorite"
+                                               data-tfcl-title-not-favorite="Add to Favorite"
+                                               data-tfcl-title-favorited="It is your favorite"
+                                               data-tfcl-icon-not-favorite="far fa-heart"
+                                               data-tfcl-icon-favorited="far fa-heart"><i class="far fa-heart"
+                                                                                          aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="compare tfcl-compare-listing hv-tool" href="javascript:void(0)"
+                                               data-listing-id="3651" data-toggle="tooltip" data-tooltip="Add Compare"
+                                               title="Compare">
+                                                <i class="far fa-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    {% endfor %}
+
+
+<!--                    <div class="wrap-tfcl-listing-card cards-item col-xl-3 col-md-6 "-->
+<!--                         data-col="col-xl-3 col-md-6">-->
+<!--                        <div class="tfcl-listing-card">-->
+<!--                            <div class="featured-property tfcl-image-map" title="BMW 3 Series Hybrid"-->
+<!--                                 data-image="{% static '/wp-content/uploads/2024/01/carr-32-1-660x471.webp' %}"-->
+<!--                                 data-id="3581"-->
+<!--                                 data-location="7342 Winding Lake Circle, Oviedo, Florida 32765, United States"-->
+<!--                                 data-price-prefix=""-->
+<!--                                 data-price-suffix=""-->
+<!--                                 data-price="$44,900">-->
+<!--                                <div class="group-meta">-->
+<!--                                    <div class="inner">-->
+<!--                                        <span class="features">Featured</span>-->
+<!--                                        <span class="count-list-gallery view-gallery" data-mfp-event-->
+<!--                                              data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-32-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-13-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-31-3-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-57-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-34-1-660x471.webp&quot;]"><img-->
+<!--                                                src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/camera.svg' %}"-->
+<!--                                                alt="icon-map">5</span>-->
+<!--                                    </div>-->
+<!--                                    <span class="date-car">2023</span>-->
+<!--                                </div>-->
+<!--                                <a href="{% static '/listing/bmw-3-series-hybrid/index.html' %}"-->
+<!--                                   title="BMW 3 Series Hybrid">-->
+<!--                                    <div class="listing-images">-->
+<!--                                        <div class="hover-listing-image">-->
+<!--                                            <div class="wrap-hover-listing">-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="BMW 3 Series Hybrid">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-32-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="BMW 3 Series Hybrid">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/crr-13-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="BMW 3 Series Hybrid">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static 'wp-content/uploads/2024/01/carr-31-3-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item view-gallery" data-mfp-event-->
+<!--                                                     data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-32-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-13-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-31-3-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-57-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-34-1-660x471.webp&quot;]"-->
+<!--                                                     title="BMW 3 Series Hybrid">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-57-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image tfcl-light-gallery"-->
+<!--                                                             alt="images">-->
+<!--                                                        <div class="overlay-limit">-->
+<!--                                                            <img decoding="async"-->
+<!--                                                                 src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/picture.svg' %}"-->
+<!--                                                                 class="icon-img" alt="icon-map">-->
+<!--                                                            <p>1 more photos</p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="bullet-hover-listing">-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="card-content">-->
+<!--                                <a href="/index/" class="car-body">Sedan</a>-->
+<!--                                <h3 class="tfcl-listing-title">-->
+<!--                                    <a title="BMW 3 Series Hybrid"-->
+<!--                                       href="/listing/bmw-3-series-hybrid/index.html">BMW 3 Series Hybrid</a>-->
+<!--                                </h3>-->
+<!--                                <div class="price">-->
+<!--                    													<span class="inner sale_price">-->
+<!--                    												$44,900											</span>-->
+<!--                                </div>-->
+<!--                                <ul class="infor-description">-->
+<!--                                    <li class="listing-information fuel">-->
+<!--                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"-->
+<!--                                             viewBox="0 0 23 23" fill="none">-->
+<!--                                            <g clip-path="url(#clip0_190_9250)">-->
+<!--                                                <path d="M13.6562 4.3125C13.6562 3.91553 13.3345 3.59375 12.9375 3.59375H5.75C5.35303 3.59375 5.03125 3.91553 5.03125 4.3125V10.0625C5.03125 10.4595 5.35303 10.7812 5.75 10.7812H12.9375C13.3345 10.7812 13.6562 10.4595 13.6562 10.0625V4.3125ZM12.2188 9.34375H6.46875V5.03125H12.2188V9.34375Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                                <path d="M21.9011 5.09652L19.0347 3.65902C18.6788 3.48073 18.2522 3.62569 18.0746 3.98048C17.897 4.33563 18.0431 4.76733 18.3982 4.94491L19.4898 5.49022C19.4606 5.56838 19.4229 5.65104 19.4229 5.73949C19.4229 6.6753 20.125 7.46566 20.8438 7.76326V16.5207C20.8438 16.9169 20.5212 17.2395 20.125 17.2395C19.7288 17.2395 19.4062 16.9169 19.4062 16.5207V10.7707C19.4062 9.03536 17.9688 7.58358 16.5312 7.24963V2.86449C16.5312 1.27924 15.2758 0 13.6906 0H5.06557C3.48032 0 2.15625 1.27924 2.15625 2.86449V18.9514L1.11604 19.4715C0.872473 19.5933 0.71875 19.8421 0.71875 20.1145V22.2707C0.71875 22.6677 1.07489 23 1.47182 23H17.2843C17.6812 23 17.9688 22.6677 17.9688 22.2707V20.1145C17.9688 19.8421 17.815 19.5933 17.5715 19.4715L16.5312 18.9514V8.74696C17.25 9.04457 17.9688 9.83493 17.9688 10.7707V16.5207C17.9688 17.7098 18.936 18.677 20.125 18.677C21.314 18.677 22.2812 17.7098 22.2812 16.5207V5.73949C22.2812 5.46713 22.1447 5.2183 21.9011 5.09652ZM16.5312 21.5625H2.15625V20.5588L3.19646 20.0387C3.44003 19.9169 3.59375 19.6681 3.59375 19.3957V2.86444C3.59375 2.07166 4.27274 1.4375 5.06557 1.4375H13.6906C14.4834 1.4375 15.0938 2.07166 15.0938 2.86449V19.3957C15.0938 19.6681 15.2475 19.9169 15.491 20.0387L16.5312 20.5588V21.5625Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                            </g>-->
+<!--                                            <defs>-->
+<!--                                                <clipPath id="clip0_190_9250">-->
+<!--                                                    <rect width="23" height="23" fill="white"/>-->
+<!--                                                </clipPath>-->
+<!--                                            </defs>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Fuel type</span>-->
+<!--                                            <p>Hybrid</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information mileage">-->
+<!--                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path d="M16.1488 5.05304C15.8966 4.78761 15.5007 4.74847 15.2059 4.95992C14.0954 5.75671 8.52514 9.76339 7.92649 10.3935C7.05836 11.3074 7.05836 12.7943 7.92649 13.7081C8.36056 14.165 8.93078 14.3935 9.50093 14.3935C10.0711 14.3935 10.6413 14.165 11.0754 13.7081C11.674 13.078 15.4803 7.21453 16.2373 6.04554C16.4381 5.73527 16.4009 5.31855 16.1488 5.05304ZM10.0257 12.6032C9.73635 12.9079 9.26547 12.9079 8.97613 12.6032C8.68675 12.2987 8.68672 11.8032 8.97598 11.4985C9.20858 11.2566 10.7901 10.0693 12.7359 8.64562C11.3834 10.6938 10.2555 12.3585 10.0257 12.6032Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M3.42263 15.6845L2.5064 16.155C1.83599 14.8955 1.48437 13.4898 1.48437 12.0508C1.48437 10.9964 1.66907 9.98664 2.00613 9.05535L3.05599 9.58543C3.15953 9.63769 3.26882 9.66246 3.37647 9.66246C3.65305 9.66246 3.91856 9.49898 4.04618 9.21891C4.22342 8.82988 4.06756 8.3632 3.69795 8.1766L2.66141 7.65324C3.94974 5.44152 6.17878 3.89953 8.75785 3.64914V4.82418C8.75785 5.25566 9.09013 5.60543 9.50004 5.60543C9.90995 5.60543 10.2422 5.25566 10.2422 4.82418V3.64855C11.1265 3.73328 11.9821 3.97031 12.7943 4.35625C13.1678 4.53379 13.6074 4.35883 13.7761 3.96566C13.9447 3.57238 13.7786 3.10969 13.405 2.93215C12.1742 2.34734 10.8604 2.05078 9.5 2.05078C6.96246 2.05078 4.57681 3.09094 2.78246 4.97969C0.988185 6.86848 0 9.37969 0 12.0508C0 14.0246 0.556566 15.9443 1.60954 17.6021C1.75138 17.8254 1.98587 17.9493 2.22701 17.9493C2.33663 17.9493 2.44766 17.9237 2.55197 17.8701L4.07346 17.0889C4.44188 16.8997 4.59484 16.432 4.41512 16.0442C4.2354 15.6564 3.79106 15.4954 3.42263 15.6845Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M18.1629 7.94051C17.9942 7.54727 17.5548 7.37227 17.181 7.54989C16.8074 7.72743 16.6413 8.19012 16.81 8.58336C17.2784 9.67547 17.5158 10.8422 17.5158 12.051C17.5158 13.4922 17.1631 14.9002 16.4907 16.1611L15.5341 15.6816C15.1641 15.4961 14.7212 15.6614 14.5449 16.0511C14.3687 16.4406 14.5259 16.9068 14.8959 17.0923L16.4545 17.8736C16.5571 17.9249 16.6658 17.9495 16.7732 17.9495C17.0144 17.9495 17.249 17.8255 17.3906 17.6024C18.4436 15.9445 19.0002 14.0248 19.0002 12.051C19.0002 10.619 18.7185 9.23602 18.1629 7.94051Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Mileage</span>-->
+<!--                                            <p>15000 km</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information transmission">-->
+<!--                                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 1.59375C1.96557 1.59375 0.990234 2.46642 0.990234 3.54167C0.990234 4.61692 1.96557 5.48958 3.16732 5.48958C4.36907 5.48958 5.3444 4.61692 5.3444 3.54167C5.3444 2.46642 4.36907 1.59375 3.16732 1.59375ZM3.16732 2.65625C3.71357 2.65625 4.1569 3.05292 4.1569 3.54167C4.1569 4.03042 3.71357 4.42708 3.16732 4.42708C2.62107 4.42708 2.17773 4.03042 2.17773 3.54167C2.17773 3.05292 2.62107 2.65625 3.16732 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 11.5107C1.96557 11.5107 0.990234 12.3834 0.990234 13.4587C0.990234 14.5339 1.96557 15.4066 3.16732 15.4066C4.36907 15.4066 5.3444 14.5339 5.3444 13.4587C5.3444 12.3834 4.36907 11.5107 3.16732 11.5107ZM3.16732 12.5732C3.71357 12.5732 4.1569 12.9699 4.1569 13.4587C4.1569 13.9474 3.71357 14.3441 3.16732 14.3441C2.62107 14.3441 2.17773 13.9474 2.17773 13.4587C2.17773 12.9699 2.62107 12.5732 3.16732 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 1.59375C8.29955 1.59375 7.32422 2.46642 7.32422 3.54167C7.32422 4.61692 8.29955 5.48958 9.5013 5.48958C10.7031 5.48958 11.6784 4.61692 11.6784 3.54167C11.6784 2.46642 10.7031 1.59375 9.5013 1.59375ZM9.5013 2.65625C10.0476 2.65625 10.4909 3.05292 10.4909 3.54167C10.4909 4.03042 10.0476 4.42708 9.5013 4.42708C8.95505 4.42708 8.51172 4.03042 8.51172 3.54167C8.51172 3.05292 8.95505 2.65625 9.5013 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 11.5107C8.29955 11.5107 7.32422 12.3834 7.32422 13.4587C7.32422 14.5339 8.29955 15.4066 9.5013 15.4066C10.7031 15.4066 11.6784 14.5339 11.6784 13.4587C11.6784 12.3834 10.7031 11.5107 9.5013 11.5107ZM9.5013 12.5732C10.0476 12.5732 10.4909 12.9699 10.4909 13.4587C10.4909 13.9474 10.0476 14.3441 9.5013 14.3441C8.95505 14.3441 8.51172 13.9474 8.51172 13.4587C8.51172 12.9699 8.95505 12.5732 9.5013 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 1.59375C14.6316 1.59375 13.6562 2.46642 13.6562 3.54167C13.6562 4.61692 14.6316 5.48958 15.8333 5.48958C17.0351 5.48958 18.0104 4.61692 18.0104 3.54167C18.0104 2.46642 17.0351 1.59375 15.8333 1.59375ZM15.8333 2.65625C16.3796 2.65625 16.8229 3.05292 16.8229 3.54167C16.8229 4.03042 16.3796 4.42708 15.8333 4.42708C15.2871 4.42708 14.8438 4.03042 14.8438 3.54167C14.8438 3.05292 15.2871 2.65625 15.8333 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 11.5107C14.6316 11.5107 13.6562 12.3834 13.6562 13.4587C13.6562 14.5339 14.6316 15.4066 15.8333 15.4066C17.0351 15.4066 18.0104 14.5339 18.0104 13.4587C18.0104 12.3834 17.0351 11.5107 15.8333 11.5107ZM15.8333 12.5732C16.3796 12.5732 16.8229 12.9699 16.8229 13.4587C16.8229 13.9474 16.3796 14.3441 15.8333 14.3441C15.2871 14.3441 14.8438 13.9474 14.8438 13.4587C14.8438 12.9699 15.2871 12.5732 15.8333 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M2.57422 4.95801V12.0413C2.57422 12.3346 2.84022 12.5726 3.16797 12.5726C3.49572 12.5726 3.76172 12.3346 3.76172 12.0413V4.95801C3.76172 4.66476 3.49572 4.42676 3.16797 4.42676C2.84022 4.42676 2.57422 4.66476 2.57422 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M8.90625 4.95801V12.0413C8.90625 12.3346 9.17225 12.5726 9.5 12.5726C9.82775 12.5726 10.0938 12.3346 10.0938 12.0413V4.95801C10.0938 4.66476 9.82775 4.42676 9.5 4.42676C9.17225 4.42676 8.90625 4.66476 8.90625 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.2409 4.95801V7.79134C15.2409 7.88909 15.1522 7.96842 15.043 7.96842H3.16797C2.84022 7.96842 2.57422 8.20642 2.57422 8.49967C2.57422 8.79292 2.84022 9.03092 3.16797 9.03092H15.043C15.8085 9.03092 16.4284 8.47559 16.4284 7.79134C16.4284 6.75788 16.4284 4.95801 16.4284 4.95801C16.4284 4.66476 16.1624 4.42676 15.8346 4.42676C15.5069 4.42676 15.2409 4.66476 15.2409 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Transmission</span>-->
+<!--                                            <p>Auto</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div class="bottom-content">-->
+<!--                                    <div class="card-button">-->
+<!--                                        <a title="BMW 3 Series Hybrid"-->
+<!--                                           href="{% static '/listing/bmw-3-series-hybrid/index.html' %}"-->
+<!--                                           class="btn-listing">View Details <i-->
+<!--                                                class="icon-motorx-readmore"></i></a>-->
+<!--                                    </div>-->
+<!--                                    <ul class="list-controller">-->
+<!--                                        <li>-->
+<!--                                            <a href="javascript:void(0)"-->
+<!--                                               class="tfcl-listing-favorite hv-tool "-->
+<!--                                               data-tfcl-car-id="3581" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add to Favorite"-->
+<!--                                               data-tfcl-title-not-favorite="Add to Favorite"-->
+<!--                                               data-tfcl-title-favorited="It is your favorite"-->
+<!--                                               data-tfcl-icon-not-favorite="far fa-heart"-->
+<!--                                               data-tfcl-icon-favorited="far fa-heart"><i class="far fa-heart"-->
+<!--                                                                                          aria-hidden="true"></i></a>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <a class="compare tfcl-compare-listing hv-tool" href="javascript:void(0)"-->
+<!--                                               data-listing-id="3581" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add Compare"-->
+<!--                                               title="Compare">-->
+<!--                                                <i class="far fa-plus"></i>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wrap-tfcl-listing-card cards-item col-xl-3 col-md-6 "-->
+<!--                         data-col="col-xl-3 col-md-6">-->
+<!--                        <div class="tfcl-listing-card">-->
+<!--                            <div class="featured-property tfcl-image-map" title="Audi RS 5 2024"-->
+<!--                                 data-image="{% static '/wp-content/uploads/2023/12/crr-15-660x471.webp' %}"-->
+<!--                                 data-id="3406"-->
+<!--                                 data-location="2806 Pine Street, San Francisco, California 94115, United States"-->
+<!--                                 data-price-prefix=""-->
+<!--                                 data-price-suffix=""-->
+<!--                                 data-price="$78,900">-->
+<!--                                <div class="group-meta">-->
+<!--                                    <div class="inner">-->
+<!--                                        <span class="features">Featured</span>-->
+<!--                                        <span class="count-list-gallery view-gallery" data-mfp-event-->
+<!--                                              data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2023\/12\/crr-15-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-13-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-38-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-08-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-11-660x471.webp&quot;]"><img-->
+<!--                                                src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/camera.svg' %}"-->
+<!--                                                alt="icon-map">5</span>-->
+<!--                                    </div>-->
+<!--                                    <span class="date-car">2024</span>-->
+<!--                                </div>-->
+<!--                                <a href="{% static '/listing/audi-rs-5-2024/index.html' %}" title="Audi RS 5 2024">-->
+<!--                                    <div class="listing-images">-->
+<!--                                        <div class="hover-listing-image">-->
+<!--                                            <div class="wrap-hover-listing">-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Audi RS 5 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2023/12/crr-15-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Audi RS 5 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/crr-13-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Audi RS 5 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-38-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item view-gallery" data-mfp-event-->
+<!--                                                     data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2023\/12\/crr-15-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-13-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-38-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-08-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-11-660x471.webp&quot;]"-->
+<!--                                                     title="Audi RS 5 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/crr-08-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image tfcl-light-gallery"-->
+<!--                                                             alt="images">-->
+<!--                                                        <div class="overlay-limit">-->
+<!--                                                            <img decoding="async"-->
+<!--                                                                 src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/picture.svg' %}"-->
+<!--                                                                 class="icon-img" alt="icon-map">-->
+<!--                                                            <p>1 more photos</p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="bullet-hover-listing">-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="card-content">-->
+<!--                                <a href="{% static '/body/hatchback/index.html' %}" class="car-body">Hatchback</a>-->
+<!--                                <h3 class="tfcl-listing-title">-->
+<!--                                    <a title="Audi RS 5 2024"-->
+<!--                                       href="{% static '/listing/audi-rs-5-2024/index.html' %}">Audi RS 5 2024</a>-->
+<!--                                </h3>-->
+<!--                                <div class="price">-->
+<!--                    													<span class="inner sale_price">-->
+<!--                    												$78,900											</span>-->
+<!--                                </div>-->
+<!--                                <ul class="infor-description">-->
+<!--                                    <li class="listing-information fuel">-->
+<!--                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"-->
+<!--                                             viewBox="0 0 23 23" fill="none">-->
+<!--                                            <g clip-path="url(#clip0_190_9250)">-->
+<!--                                                <path d="M13.6562 4.3125C13.6562 3.91553 13.3345 3.59375 12.9375 3.59375H5.75C5.35303 3.59375 5.03125 3.91553 5.03125 4.3125V10.0625C5.03125 10.4595 5.35303 10.7812 5.75 10.7812H12.9375C13.3345 10.7812 13.6562 10.4595 13.6562 10.0625V4.3125ZM12.2188 9.34375H6.46875V5.03125H12.2188V9.34375Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                                <path d="M21.9011 5.09652L19.0347 3.65902C18.6788 3.48073 18.2522 3.62569 18.0746 3.98048C17.897 4.33563 18.0431 4.76733 18.3982 4.94491L19.4898 5.49022C19.4606 5.56838 19.4229 5.65104 19.4229 5.73949C19.4229 6.6753 20.125 7.46566 20.8438 7.76326V16.5207C20.8438 16.9169 20.5212 17.2395 20.125 17.2395C19.7288 17.2395 19.4062 16.9169 19.4062 16.5207V10.7707C19.4062 9.03536 17.9688 7.58358 16.5312 7.24963V2.86449C16.5312 1.27924 15.2758 0 13.6906 0H5.06557C3.48032 0 2.15625 1.27924 2.15625 2.86449V18.9514L1.11604 19.4715C0.872473 19.5933 0.71875 19.8421 0.71875 20.1145V22.2707C0.71875 22.6677 1.07489 23 1.47182 23H17.2843C17.6812 23 17.9688 22.6677 17.9688 22.2707V20.1145C17.9688 19.8421 17.815 19.5933 17.5715 19.4715L16.5312 18.9514V8.74696C17.25 9.04457 17.9688 9.83493 17.9688 10.7707V16.5207C17.9688 17.7098 18.936 18.677 20.125 18.677C21.314 18.677 22.2812 17.7098 22.2812 16.5207V5.73949C22.2812 5.46713 22.1447 5.2183 21.9011 5.09652ZM16.5312 21.5625H2.15625V20.5588L3.19646 20.0387C3.44003 19.9169 3.59375 19.6681 3.59375 19.3957V2.86444C3.59375 2.07166 4.27274 1.4375 5.06557 1.4375H13.6906C14.4834 1.4375 15.0938 2.07166 15.0938 2.86449V19.3957C15.0938 19.6681 15.2475 19.9169 15.491 20.0387L16.5312 20.5588V21.5625Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                            </g>-->
+<!--                                            <defs>-->
+<!--                                                <clipPath id="clip0_190_9250">-->
+<!--                                                    <rect width="23" height="23" fill="white"/>-->
+<!--                                                </clipPath>-->
+<!--                                            </defs>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Fuel type</span>-->
+<!--                                            <p>Gasoline</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information mileage">-->
+<!--                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path d="M16.1488 5.05304C15.8966 4.78761 15.5007 4.74847 15.2059 4.95992C14.0954 5.75671 8.52514 9.76339 7.92649 10.3935C7.05836 11.3074 7.05836 12.7943 7.92649 13.7081C8.36056 14.165 8.93078 14.3935 9.50093 14.3935C10.0711 14.3935 10.6413 14.165 11.0754 13.7081C11.674 13.078 15.4803 7.21453 16.2373 6.04554C16.4381 5.73527 16.4009 5.31855 16.1488 5.05304ZM10.0257 12.6032C9.73635 12.9079 9.26547 12.9079 8.97613 12.6032C8.68675 12.2987 8.68672 11.8032 8.97598 11.4985C9.20858 11.2566 10.7901 10.0693 12.7359 8.64562C11.3834 10.6938 10.2555 12.3585 10.0257 12.6032Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M3.42263 15.6845L2.5064 16.155C1.83599 14.8955 1.48437 13.4898 1.48437 12.0508C1.48437 10.9964 1.66907 9.98664 2.00613 9.05535L3.05599 9.58543C3.15953 9.63769 3.26882 9.66246 3.37647 9.66246C3.65305 9.66246 3.91856 9.49898 4.04618 9.21891C4.22342 8.82988 4.06756 8.3632 3.69795 8.1766L2.66141 7.65324C3.94974 5.44152 6.17878 3.89953 8.75785 3.64914V4.82418C8.75785 5.25566 9.09013 5.60543 9.50004 5.60543C9.90995 5.60543 10.2422 5.25566 10.2422 4.82418V3.64855C11.1265 3.73328 11.9821 3.97031 12.7943 4.35625C13.1678 4.53379 13.6074 4.35883 13.7761 3.96566C13.9447 3.57238 13.7786 3.10969 13.405 2.93215C12.1742 2.34734 10.8604 2.05078 9.5 2.05078C6.96246 2.05078 4.57681 3.09094 2.78246 4.97969C0.988185 6.86848 0 9.37969 0 12.0508C0 14.0246 0.556566 15.9443 1.60954 17.6021C1.75138 17.8254 1.98587 17.9493 2.22701 17.9493C2.33663 17.9493 2.44766 17.9237 2.55197 17.8701L4.07346 17.0889C4.44188 16.8997 4.59484 16.432 4.41512 16.0442C4.2354 15.6564 3.79106 15.4954 3.42263 15.6845Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M18.1629 7.94051C17.9942 7.54727 17.5548 7.37227 17.181 7.54989C16.8074 7.72743 16.6413 8.19012 16.81 8.58336C17.2784 9.67547 17.5158 10.8422 17.5158 12.051C17.5158 13.4922 17.1631 14.9002 16.4907 16.1611L15.5341 15.6816C15.1641 15.4961 14.7212 15.6614 14.5449 16.0511C14.3687 16.4406 14.5259 16.9068 14.8959 17.0923L16.4545 17.8736C16.5571 17.9249 16.6658 17.9495 16.7732 17.9495C17.0144 17.9495 17.249 17.8255 17.3906 17.6024C18.4436 15.9445 19.0002 14.0248 19.0002 12.051C19.0002 10.619 18.7185 9.23602 18.1629 7.94051Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Mileage</span>-->
+<!--                                            <p>0</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information transmission">-->
+<!--                                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 1.59375C1.96557 1.59375 0.990234 2.46642 0.990234 3.54167C0.990234 4.61692 1.96557 5.48958 3.16732 5.48958C4.36907 5.48958 5.3444 4.61692 5.3444 3.54167C5.3444 2.46642 4.36907 1.59375 3.16732 1.59375ZM3.16732 2.65625C3.71357 2.65625 4.1569 3.05292 4.1569 3.54167C4.1569 4.03042 3.71357 4.42708 3.16732 4.42708C2.62107 4.42708 2.17773 4.03042 2.17773 3.54167C2.17773 3.05292 2.62107 2.65625 3.16732 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 11.5107C1.96557 11.5107 0.990234 12.3834 0.990234 13.4587C0.990234 14.5339 1.96557 15.4066 3.16732 15.4066C4.36907 15.4066 5.3444 14.5339 5.3444 13.4587C5.3444 12.3834 4.36907 11.5107 3.16732 11.5107ZM3.16732 12.5732C3.71357 12.5732 4.1569 12.9699 4.1569 13.4587C4.1569 13.9474 3.71357 14.3441 3.16732 14.3441C2.62107 14.3441 2.17773 13.9474 2.17773 13.4587C2.17773 12.9699 2.62107 12.5732 3.16732 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 1.59375C8.29955 1.59375 7.32422 2.46642 7.32422 3.54167C7.32422 4.61692 8.29955 5.48958 9.5013 5.48958C10.7031 5.48958 11.6784 4.61692 11.6784 3.54167C11.6784 2.46642 10.7031 1.59375 9.5013 1.59375ZM9.5013 2.65625C10.0476 2.65625 10.4909 3.05292 10.4909 3.54167C10.4909 4.03042 10.0476 4.42708 9.5013 4.42708C8.95505 4.42708 8.51172 4.03042 8.51172 3.54167C8.51172 3.05292 8.95505 2.65625 9.5013 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 11.5107C8.29955 11.5107 7.32422 12.3834 7.32422 13.4587C7.32422 14.5339 8.29955 15.4066 9.5013 15.4066C10.7031 15.4066 11.6784 14.5339 11.6784 13.4587C11.6784 12.3834 10.7031 11.5107 9.5013 11.5107ZM9.5013 12.5732C10.0476 12.5732 10.4909 12.9699 10.4909 13.4587C10.4909 13.9474 10.0476 14.3441 9.5013 14.3441C8.95505 14.3441 8.51172 13.9474 8.51172 13.4587C8.51172 12.9699 8.95505 12.5732 9.5013 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 1.59375C14.6316 1.59375 13.6562 2.46642 13.6562 3.54167C13.6562 4.61692 14.6316 5.48958 15.8333 5.48958C17.0351 5.48958 18.0104 4.61692 18.0104 3.54167C18.0104 2.46642 17.0351 1.59375 15.8333 1.59375ZM15.8333 2.65625C16.3796 2.65625 16.8229 3.05292 16.8229 3.54167C16.8229 4.03042 16.3796 4.42708 15.8333 4.42708C15.2871 4.42708 14.8438 4.03042 14.8438 3.54167C14.8438 3.05292 15.2871 2.65625 15.8333 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 11.5107C14.6316 11.5107 13.6562 12.3834 13.6562 13.4587C13.6562 14.5339 14.6316 15.4066 15.8333 15.4066C17.0351 15.4066 18.0104 14.5339 18.0104 13.4587C18.0104 12.3834 17.0351 11.5107 15.8333 11.5107ZM15.8333 12.5732C16.3796 12.5732 16.8229 12.9699 16.8229 13.4587C16.8229 13.9474 16.3796 14.3441 15.8333 14.3441C15.2871 14.3441 14.8438 13.9474 14.8438 13.4587C14.8438 12.9699 15.2871 12.5732 15.8333 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M2.57422 4.95801V12.0413C2.57422 12.3346 2.84022 12.5726 3.16797 12.5726C3.49572 12.5726 3.76172 12.3346 3.76172 12.0413V4.95801C3.76172 4.66476 3.49572 4.42676 3.16797 4.42676C2.84022 4.42676 2.57422 4.66476 2.57422 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M8.90625 4.95801V12.0413C8.90625 12.3346 9.17225 12.5726 9.5 12.5726C9.82775 12.5726 10.0938 12.3346 10.0938 12.0413V4.95801C10.0938 4.66476 9.82775 4.42676 9.5 4.42676C9.17225 4.42676 8.90625 4.66476 8.90625 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.2409 4.95801V7.79134C15.2409 7.88909 15.1522 7.96842 15.043 7.96842H3.16797C2.84022 7.96842 2.57422 8.20642 2.57422 8.49967C2.57422 8.79292 2.84022 9.03092 3.16797 9.03092H15.043C15.8085 9.03092 16.4284 8.47559 16.4284 7.79134C16.4284 6.75788 16.4284 4.95801 16.4284 4.95801C16.4284 4.66476 16.1624 4.42676 15.8346 4.42676C15.5069 4.42676 15.2409 4.66476 15.2409 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Transmission</span>-->
+<!--                                            <p>Auto</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div class="bottom-content">-->
+<!--                                    <div class="card-button">-->
+<!--                                        <a title="Audi RS 5 2024"-->
+<!--                                           href="{% static '/listing/audi-rs-5-2024/index.html' %}"-->
+<!--                                           class="btn-listing">View Details <i-->
+<!--                                                class="icon-motorx-readmore"></i></a>-->
+<!--                                    </div>-->
+<!--                                    <ul class="list-controller">-->
+<!--                                        <li>-->
+<!--                                            <a href="javascript:void(0)"-->
+<!--                                               class="tfcl-listing-favorite hv-tool "-->
+<!--                                               data-tfcl-car-id="3406" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add to Favorite"-->
+<!--                                               data-tfcl-title-not-favorite="Add to Favorite"-->
+<!--                                               data-tfcl-title-favorited="It is your favorite"-->
+<!--                                               data-tfcl-icon-not-favorite="far fa-heart"-->
+<!--                                               data-tfcl-icon-favorited="far fa-heart"><i class="far fa-heart"-->
+<!--                                                                                          aria-hidden="true"></i></a>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <a class="compare tfcl-compare-listing hv-tool" href="javascript:void(0)"-->
+<!--                                               data-listing-id="3406" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add Compare"-->
+<!--                                               title="Compare">-->
+<!--                                                <i class="far fa-plus"></i>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wrap-tfcl-listing-card cards-item col-xl-3 col-md-6 "-->
+<!--                         data-col="col-xl-3 col-md-6">-->
+<!--                        <div class="tfcl-listing-card">-->
+<!--                            <div class="featured-property tfcl-image-map" title="Lexus LC Hybrid 2024"-->
+<!--                                 data-image="{% static '/wp-content/uploads/2024/01/5-660x471.jpg' %}"-->
+<!--                                 data-id="1874"-->
+<!--                                 data-location="3569 Northwest 108th Avenue, Sunrise, Florida 33351, United States"-->
+<!--                                 data-price-prefix=""-->
+<!--                                 data-price-suffix=""-->
+<!--                                 data-price="$101,750">-->
+<!--                                <div class="group-meta">-->
+<!--                                    <div class="inner">-->
+<!--                                        <span class="features">Featured</span>-->
+<!--                                        <span class="count-list-gallery view-gallery" data-mfp-event-->
+<!--                                              data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/5-660x471.jpg&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-14-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-37-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-31-2-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-36-1-660x471.webp&quot;]"><img-->
+<!--                                                src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/camera.svg' %}"-->
+<!--                                                alt="icon-map">5</span>-->
+<!--                                    </div>-->
+<!--                                    <span class="date-car">2024</span>-->
+<!--                                </div>-->
+<!--                                <a href="{% static '/listing/lexus-lc-hybrid-2024/index.html' %}"-->
+<!--                                   title="Lexus LC Hybrid 2024">-->
+<!--                                    <div class="listing-images">-->
+<!--                                        <div class="hover-listing-image">-->
+<!--                                            <div class="wrap-hover-listing">-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Lexus LC Hybrid 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/5-660x471.jpg' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Lexus LC Hybrid 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-14-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Lexus LC Hybrid 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-37-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item view-gallery" data-mfp-event-->
+<!--                                                     data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/5-660x471.jpg&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-14-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-37-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-31-2-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-36-1-660x471.webp&quot;]"-->
+<!--                                                     title="Lexus LC Hybrid 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-31-2-660x471.webp' %}"-->
+<!--                                                             class="swiper-image tfcl-light-gallery"-->
+<!--                                                             alt="images">-->
+<!--                                                        <div class="overlay-limit">-->
+<!--                                                            <img decoding="async"-->
+<!--                                                                 src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/picture.svg' %}"-->
+<!--                                                                 class="icon-img" alt="icon-map">-->
+<!--                                                            <p>1 more photos</p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="bullet-hover-listing">-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="card-content">-->
+<!--                                <a href="{% static '/body/convertible/index.html' %}" class="car-body">Convertible</a>-->
+<!--                                <h3 class="tfcl-listing-title">-->
+<!--                                    <a title="Lexus LC Hybrid 2024"-->
+<!--                                       href="{% static '/listing/lexus-lc-hybrid-2024/index.html' %}">Lexus LC Hybrid-->
+<!--                                        2024</a>-->
+<!--                                </h3>-->
+<!--                                <div class="price">-->
+<!--                    													<span class="inner sale_price">-->
+<!--                    												$101,750											</span>-->
+<!--                                </div>-->
+<!--                                <ul class="infor-description">-->
+<!--                                    <li class="listing-information fuel">-->
+<!--                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"-->
+<!--                                             viewBox="0 0 23 23" fill="none">-->
+<!--                                            <g clip-path="url(#clip0_190_9250)">-->
+<!--                                                <path d="M13.6562 4.3125C13.6562 3.91553 13.3345 3.59375 12.9375 3.59375H5.75C5.35303 3.59375 5.03125 3.91553 5.03125 4.3125V10.0625C5.03125 10.4595 5.35303 10.7812 5.75 10.7812H12.9375C13.3345 10.7812 13.6562 10.4595 13.6562 10.0625V4.3125ZM12.2188 9.34375H6.46875V5.03125H12.2188V9.34375Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                                <path d="M21.9011 5.09652L19.0347 3.65902C18.6788 3.48073 18.2522 3.62569 18.0746 3.98048C17.897 4.33563 18.0431 4.76733 18.3982 4.94491L19.4898 5.49022C19.4606 5.56838 19.4229 5.65104 19.4229 5.73949C19.4229 6.6753 20.125 7.46566 20.8438 7.76326V16.5207C20.8438 16.9169 20.5212 17.2395 20.125 17.2395C19.7288 17.2395 19.4062 16.9169 19.4062 16.5207V10.7707C19.4062 9.03536 17.9688 7.58358 16.5312 7.24963V2.86449C16.5312 1.27924 15.2758 0 13.6906 0H5.06557C3.48032 0 2.15625 1.27924 2.15625 2.86449V18.9514L1.11604 19.4715C0.872473 19.5933 0.71875 19.8421 0.71875 20.1145V22.2707C0.71875 22.6677 1.07489 23 1.47182 23H17.2843C17.6812 23 17.9688 22.6677 17.9688 22.2707V20.1145C17.9688 19.8421 17.815 19.5933 17.5715 19.4715L16.5312 18.9514V8.74696C17.25 9.04457 17.9688 9.83493 17.9688 10.7707V16.5207C17.9688 17.7098 18.936 18.677 20.125 18.677C21.314 18.677 22.2812 17.7098 22.2812 16.5207V5.73949C22.2812 5.46713 22.1447 5.2183 21.9011 5.09652ZM16.5312 21.5625H2.15625V20.5588L3.19646 20.0387C3.44003 19.9169 3.59375 19.6681 3.59375 19.3957V2.86444C3.59375 2.07166 4.27274 1.4375 5.06557 1.4375H13.6906C14.4834 1.4375 15.0938 2.07166 15.0938 2.86449V19.3957C15.0938 19.6681 15.2475 19.9169 15.491 20.0387L16.5312 20.5588V21.5625Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                            </g>-->
+<!--                                            <defs>-->
+<!--                                                <clipPath id="clip0_190_9250">-->
+<!--                                                    <rect width="23" height="23" fill="white"/>-->
+<!--                                                </clipPath>-->
+<!--                                            </defs>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Fuel type</span>-->
+<!--                                            <p>Hybrid</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information mileage">-->
+<!--                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path d="M16.1488 5.05304C15.8966 4.78761 15.5007 4.74847 15.2059 4.95992C14.0954 5.75671 8.52514 9.76339 7.92649 10.3935C7.05836 11.3074 7.05836 12.7943 7.92649 13.7081C8.36056 14.165 8.93078 14.3935 9.50093 14.3935C10.0711 14.3935 10.6413 14.165 11.0754 13.7081C11.674 13.078 15.4803 7.21453 16.2373 6.04554C16.4381 5.73527 16.4009 5.31855 16.1488 5.05304ZM10.0257 12.6032C9.73635 12.9079 9.26547 12.9079 8.97613 12.6032C8.68675 12.2987 8.68672 11.8032 8.97598 11.4985C9.20858 11.2566 10.7901 10.0693 12.7359 8.64562C11.3834 10.6938 10.2555 12.3585 10.0257 12.6032Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M3.42263 15.6845L2.5064 16.155C1.83599 14.8955 1.48437 13.4898 1.48437 12.0508C1.48437 10.9964 1.66907 9.98664 2.00613 9.05535L3.05599 9.58543C3.15953 9.63769 3.26882 9.66246 3.37647 9.66246C3.65305 9.66246 3.91856 9.49898 4.04618 9.21891C4.22342 8.82988 4.06756 8.3632 3.69795 8.1766L2.66141 7.65324C3.94974 5.44152 6.17878 3.89953 8.75785 3.64914V4.82418C8.75785 5.25566 9.09013 5.60543 9.50004 5.60543C9.90995 5.60543 10.2422 5.25566 10.2422 4.82418V3.64855C11.1265 3.73328 11.9821 3.97031 12.7943 4.35625C13.1678 4.53379 13.6074 4.35883 13.7761 3.96566C13.9447 3.57238 13.7786 3.10969 13.405 2.93215C12.1742 2.34734 10.8604 2.05078 9.5 2.05078C6.96246 2.05078 4.57681 3.09094 2.78246 4.97969C0.988185 6.86848 0 9.37969 0 12.0508C0 14.0246 0.556566 15.9443 1.60954 17.6021C1.75138 17.8254 1.98587 17.9493 2.22701 17.9493C2.33663 17.9493 2.44766 17.9237 2.55197 17.8701L4.07346 17.0889C4.44188 16.8997 4.59484 16.432 4.41512 16.0442C4.2354 15.6564 3.79106 15.4954 3.42263 15.6845Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M18.1629 7.94051C17.9942 7.54727 17.5548 7.37227 17.181 7.54989C16.8074 7.72743 16.6413 8.19012 16.81 8.58336C17.2784 9.67547 17.5158 10.8422 17.5158 12.051C17.5158 13.4922 17.1631 14.9002 16.4907 16.1611L15.5341 15.6816C15.1641 15.4961 14.7212 15.6614 14.5449 16.0511C14.3687 16.4406 14.5259 16.9068 14.8959 17.0923L16.4545 17.8736C16.5571 17.9249 16.6658 17.9495 16.7732 17.9495C17.0144 17.9495 17.249 17.8255 17.3906 17.6024C18.4436 15.9445 19.0002 14.0248 19.0002 12.051C19.0002 10.619 18.7185 9.23602 18.1629 7.94051Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Mileage</span>-->
+<!--                                            <p>0</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information transmission">-->
+<!--                                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 1.59375C1.96557 1.59375 0.990234 2.46642 0.990234 3.54167C0.990234 4.61692 1.96557 5.48958 3.16732 5.48958C4.36907 5.48958 5.3444 4.61692 5.3444 3.54167C5.3444 2.46642 4.36907 1.59375 3.16732 1.59375ZM3.16732 2.65625C3.71357 2.65625 4.1569 3.05292 4.1569 3.54167C4.1569 4.03042 3.71357 4.42708 3.16732 4.42708C2.62107 4.42708 2.17773 4.03042 2.17773 3.54167C2.17773 3.05292 2.62107 2.65625 3.16732 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 11.5107C1.96557 11.5107 0.990234 12.3834 0.990234 13.4587C0.990234 14.5339 1.96557 15.4066 3.16732 15.4066C4.36907 15.4066 5.3444 14.5339 5.3444 13.4587C5.3444 12.3834 4.36907 11.5107 3.16732 11.5107ZM3.16732 12.5732C3.71357 12.5732 4.1569 12.9699 4.1569 13.4587C4.1569 13.9474 3.71357 14.3441 3.16732 14.3441C2.62107 14.3441 2.17773 13.9474 2.17773 13.4587C2.17773 12.9699 2.62107 12.5732 3.16732 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 1.59375C8.29955 1.59375 7.32422 2.46642 7.32422 3.54167C7.32422 4.61692 8.29955 5.48958 9.5013 5.48958C10.7031 5.48958 11.6784 4.61692 11.6784 3.54167C11.6784 2.46642 10.7031 1.59375 9.5013 1.59375ZM9.5013 2.65625C10.0476 2.65625 10.4909 3.05292 10.4909 3.54167C10.4909 4.03042 10.0476 4.42708 9.5013 4.42708C8.95505 4.42708 8.51172 4.03042 8.51172 3.54167C8.51172 3.05292 8.95505 2.65625 9.5013 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 11.5107C8.29955 11.5107 7.32422 12.3834 7.32422 13.4587C7.32422 14.5339 8.29955 15.4066 9.5013 15.4066C10.7031 15.4066 11.6784 14.5339 11.6784 13.4587C11.6784 12.3834 10.7031 11.5107 9.5013 11.5107ZM9.5013 12.5732C10.0476 12.5732 10.4909 12.9699 10.4909 13.4587C10.4909 13.9474 10.0476 14.3441 9.5013 14.3441C8.95505 14.3441 8.51172 13.9474 8.51172 13.4587C8.51172 12.9699 8.95505 12.5732 9.5013 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 1.59375C14.6316 1.59375 13.6562 2.46642 13.6562 3.54167C13.6562 4.61692 14.6316 5.48958 15.8333 5.48958C17.0351 5.48958 18.0104 4.61692 18.0104 3.54167C18.0104 2.46642 17.0351 1.59375 15.8333 1.59375ZM15.8333 2.65625C16.3796 2.65625 16.8229 3.05292 16.8229 3.54167C16.8229 4.03042 16.3796 4.42708 15.8333 4.42708C15.2871 4.42708 14.8438 4.03042 14.8438 3.54167C14.8438 3.05292 15.2871 2.65625 15.8333 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 11.5107C14.6316 11.5107 13.6562 12.3834 13.6562 13.4587C13.6562 14.5339 14.6316 15.4066 15.8333 15.4066C17.0351 15.4066 18.0104 14.5339 18.0104 13.4587C18.0104 12.3834 17.0351 11.5107 15.8333 11.5107ZM15.8333 12.5732C16.3796 12.5732 16.8229 12.9699 16.8229 13.4587C16.8229 13.9474 16.3796 14.3441 15.8333 14.3441C15.2871 14.3441 14.8438 13.9474 14.8438 13.4587C14.8438 12.9699 15.2871 12.5732 15.8333 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M2.57422 4.95801V12.0413C2.57422 12.3346 2.84022 12.5726 3.16797 12.5726C3.49572 12.5726 3.76172 12.3346 3.76172 12.0413V4.95801C3.76172 4.66476 3.49572 4.42676 3.16797 4.42676C2.84022 4.42676 2.57422 4.66476 2.57422 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M8.90625 4.95801V12.0413C8.90625 12.3346 9.17225 12.5726 9.5 12.5726C9.82775 12.5726 10.0938 12.3346 10.0938 12.0413V4.95801C10.0938 4.66476 9.82775 4.42676 9.5 4.42676C9.17225 4.42676 8.90625 4.66476 8.90625 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.2409 4.95801V7.79134C15.2409 7.88909 15.1522 7.96842 15.043 7.96842H3.16797C2.84022 7.96842 2.57422 8.20642 2.57422 8.49967C2.57422 8.79292 2.84022 9.03092 3.16797 9.03092H15.043C15.8085 9.03092 16.4284 8.47559 16.4284 7.79134C16.4284 6.75788 16.4284 4.95801 16.4284 4.95801C16.4284 4.66476 16.1624 4.42676 15.8346 4.42676C15.5069 4.42676 15.2409 4.66476 15.2409 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Transmission</span>-->
+<!--                                            <p>CVT</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div class="bottom-content">-->
+<!--                                    <div class="card-button">-->
+<!--                                        <a title="Lexus LC Hybrid 2024"-->
+<!--                                           href="{% static '/listing/lexus-lc-hybrid-2024/index.html' %}"-->
+<!--                                           class="btn-listing">View Details <i-->
+<!--                                                class="icon-motorx-readmore"></i></a>-->
+<!--                                    </div>-->
+<!--                                    <ul class="list-controller">-->
+<!--                                        <li>-->
+<!--                                            <a href="javascript:void(0)"-->
+<!--                                               class="tfcl-listing-favorite hv-tool "-->
+<!--                                               data-tfcl-car-id="1874" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add to Favorite"-->
+<!--                                               data-tfcl-title-not-favorite="Add to Favorite"-->
+<!--                                               data-tfcl-title-favorited="It is your favorite"-->
+<!--                                               data-tfcl-icon-not-favorite="far fa-heart"-->
+<!--                                               data-tfcl-icon-favorited="far fa-heart"><i class="far fa-heart"-->
+<!--                                                                                          aria-hidden="true"></i></a>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <a class="compare tfcl-compare-listing hv-tool" href="javascript:void(0)"-->
+<!--                                               data-listing-id="1874" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add Compare"-->
+<!--                                               title="Compare">-->
+<!--                                                <i class="far fa-plus"></i>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wrap-tfcl-listing-card cards-item col-xl-3 col-md-6 "-->
+<!--                         data-col="col-xl-3 col-md-6">-->
+<!--                        <div class="tfcl-listing-card">-->
+<!--                            <div class="featured-property tfcl-image-map" title="Audi A4 2020 Sedan"-->
+<!--                                 data-image="{% static '/wp-content/uploads/2024/01/crr-13-1-660x471.webp' %}"-->
+<!--                                 data-id="1850"-->
+<!--                                 data-location="8011 Northwest 46th Court, Lauderhill, Florida 33351, United States"-->
+<!--                                 data-price-prefix=""-->
+<!--                                 data-price-suffix=""-->
+<!--                                 data-price="$51,300">-->
+<!--                                <div class="group-meta">-->
+<!--                                    <div class="inner">-->
+<!--                    																												<span class="count-list-gallery view-gallery"-->
+<!--                                                                                                                                          data-mfp-event-->
+<!--                                                                                                                                          data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-13-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-14-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-43-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-56-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-01-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-34-1-660x471.webp&quot;]"><img-->
+<!--                                                                                                                                            src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/camera.svg' %}"-->
+<!--                                                                                                                                            alt="icon-map">6</span>-->
+<!--                                    </div>-->
+<!--                                    <span class="date-car">2020</span>-->
+<!--                                </div>-->
+<!--                                <a href="{% static '/listing/audi-a4-2024-sedan/index.html' %}"-->
+<!--                                   title="Audi A4 2020 Sedan">-->
+<!--                                    <div class="listing-images">-->
+<!--                                        <div class="hover-listing-image">-->
+<!--                                            <div class="wrap-hover-listing">-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Audi A4 2020 Sedan">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/crr-13-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Audi A4 2020 Sedan">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/crr-14-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Audi A4 2020 Sedan">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-43-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item view-gallery" data-mfp-event-->
+<!--                                                     data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-13-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/crr-14-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-43-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-56-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-01-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-34-1-660x471.webp&quot;]"-->
+<!--                                                     title="Audi A4 2020 Sedan">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-56-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image tfcl-light-gallery"-->
+<!--                                                             alt="images">-->
+<!--                                                        <div class="overlay-limit">-->
+<!--                                                            <img decoding="async"-->
+<!--                                                                 src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/picture.svg' %}"-->
+<!--                                                                 class="icon-img" alt="icon-map">-->
+<!--                                                            <p>2 more photos</p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="bullet-hover-listing">-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="card-content">-->
+<!--                                <a href="{% static '/body/sedan/index.html' %}" class="car-body">Sedan</a>-->
+<!--                                <h3 class="tfcl-listing-title">-->
+<!--                                    <a title="Audi A4 2020 Sedan"-->
+<!--                                       href="{% static '/listing/audi-a4-2024-sedan/index.html' %}">Audi A4 2020-->
+<!--                                        Sedan</a>-->
+<!--                                </h3>-->
+<!--                                <div class="price">-->
+<!--                    													<span class="inner sale_price">-->
+<!--                    												$51,300											</span>-->
+<!--                                </div>-->
+<!--                                <ul class="infor-description">-->
+<!--                                    <li class="listing-information fuel">-->
+<!--                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"-->
+<!--                                             viewBox="0 0 23 23" fill="none">-->
+<!--                                            <g clip-path="url(#clip0_190_9250)">-->
+<!--                                                <path d="M13.6562 4.3125C13.6562 3.91553 13.3345 3.59375 12.9375 3.59375H5.75C5.35303 3.59375 5.03125 3.91553 5.03125 4.3125V10.0625C5.03125 10.4595 5.35303 10.7812 5.75 10.7812H12.9375C13.3345 10.7812 13.6562 10.4595 13.6562 10.0625V4.3125ZM12.2188 9.34375H6.46875V5.03125H12.2188V9.34375Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                                <path d="M21.9011 5.09652L19.0347 3.65902C18.6788 3.48073 18.2522 3.62569 18.0746 3.98048C17.897 4.33563 18.0431 4.76733 18.3982 4.94491L19.4898 5.49022C19.4606 5.56838 19.4229 5.65104 19.4229 5.73949C19.4229 6.6753 20.125 7.46566 20.8438 7.76326V16.5207C20.8438 16.9169 20.5212 17.2395 20.125 17.2395C19.7288 17.2395 19.4062 16.9169 19.4062 16.5207V10.7707C19.4062 9.03536 17.9688 7.58358 16.5312 7.24963V2.86449C16.5312 1.27924 15.2758 0 13.6906 0H5.06557C3.48032 0 2.15625 1.27924 2.15625 2.86449V18.9514L1.11604 19.4715C0.872473 19.5933 0.71875 19.8421 0.71875 20.1145V22.2707C0.71875 22.6677 1.07489 23 1.47182 23H17.2843C17.6812 23 17.9688 22.6677 17.9688 22.2707V20.1145C17.9688 19.8421 17.815 19.5933 17.5715 19.4715L16.5312 18.9514V8.74696C17.25 9.04457 17.9688 9.83493 17.9688 10.7707V16.5207C17.9688 17.7098 18.936 18.677 20.125 18.677C21.314 18.677 22.2812 17.7098 22.2812 16.5207V5.73949C22.2812 5.46713 22.1447 5.2183 21.9011 5.09652ZM16.5312 21.5625H2.15625V20.5588L3.19646 20.0387C3.44003 19.9169 3.59375 19.6681 3.59375 19.3957V2.86444C3.59375 2.07166 4.27274 1.4375 5.06557 1.4375H13.6906C14.4834 1.4375 15.0938 2.07166 15.0938 2.86449V19.3957C15.0938 19.6681 15.2475 19.9169 15.491 20.0387L16.5312 20.5588V21.5625Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                            </g>-->
+<!--                                            <defs>-->
+<!--                                                <clipPath id="clip0_190_9250">-->
+<!--                                                    <rect width="23" height="23" fill="white"/>-->
+<!--                                                </clipPath>-->
+<!--                                            </defs>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Fuel type</span>-->
+<!--                                            <p>Hybrid</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information mileage">-->
+<!--                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path d="M16.1488 5.05304C15.8966 4.78761 15.5007 4.74847 15.2059 4.95992C14.0954 5.75671 8.52514 9.76339 7.92649 10.3935C7.05836 11.3074 7.05836 12.7943 7.92649 13.7081C8.36056 14.165 8.93078 14.3935 9.50093 14.3935C10.0711 14.3935 10.6413 14.165 11.0754 13.7081C11.674 13.078 15.4803 7.21453 16.2373 6.04554C16.4381 5.73527 16.4009 5.31855 16.1488 5.05304ZM10.0257 12.6032C9.73635 12.9079 9.26547 12.9079 8.97613 12.6032C8.68675 12.2987 8.68672 11.8032 8.97598 11.4985C9.20858 11.2566 10.7901 10.0693 12.7359 8.64562C11.3834 10.6938 10.2555 12.3585 10.0257 12.6032Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M3.42263 15.6845L2.5064 16.155C1.83599 14.8955 1.48437 13.4898 1.48437 12.0508C1.48437 10.9964 1.66907 9.98664 2.00613 9.05535L3.05599 9.58543C3.15953 9.63769 3.26882 9.66246 3.37647 9.66246C3.65305 9.66246 3.91856 9.49898 4.04618 9.21891C4.22342 8.82988 4.06756 8.3632 3.69795 8.1766L2.66141 7.65324C3.94974 5.44152 6.17878 3.89953 8.75785 3.64914V4.82418C8.75785 5.25566 9.09013 5.60543 9.50004 5.60543C9.90995 5.60543 10.2422 5.25566 10.2422 4.82418V3.64855C11.1265 3.73328 11.9821 3.97031 12.7943 4.35625C13.1678 4.53379 13.6074 4.35883 13.7761 3.96566C13.9447 3.57238 13.7786 3.10969 13.405 2.93215C12.1742 2.34734 10.8604 2.05078 9.5 2.05078C6.96246 2.05078 4.57681 3.09094 2.78246 4.97969C0.988185 6.86848 0 9.37969 0 12.0508C0 14.0246 0.556566 15.9443 1.60954 17.6021C1.75138 17.8254 1.98587 17.9493 2.22701 17.9493C2.33663 17.9493 2.44766 17.9237 2.55197 17.8701L4.07346 17.0889C4.44188 16.8997 4.59484 16.432 4.41512 16.0442C4.2354 15.6564 3.79106 15.4954 3.42263 15.6845Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M18.1629 7.94051C17.9942 7.54727 17.5548 7.37227 17.181 7.54989C16.8074 7.72743 16.6413 8.19012 16.81 8.58336C17.2784 9.67547 17.5158 10.8422 17.5158 12.051C17.5158 13.4922 17.1631 14.9002 16.4907 16.1611L15.5341 15.6816C15.1641 15.4961 14.7212 15.6614 14.5449 16.0511C14.3687 16.4406 14.5259 16.9068 14.8959 17.0923L16.4545 17.8736C16.5571 17.9249 16.6658 17.9495 16.7732 17.9495C17.0144 17.9495 17.249 17.8255 17.3906 17.6024C18.4436 15.9445 19.0002 14.0248 19.0002 12.051C19.0002 10.619 18.7185 9.23602 18.1629 7.94051Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Mileage</span>-->
+<!--                                            <p>4111 km</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information transmission">-->
+<!--                                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 1.59375C1.96557 1.59375 0.990234 2.46642 0.990234 3.54167C0.990234 4.61692 1.96557 5.48958 3.16732 5.48958C4.36907 5.48958 5.3444 4.61692 5.3444 3.54167C5.3444 2.46642 4.36907 1.59375 3.16732 1.59375ZM3.16732 2.65625C3.71357 2.65625 4.1569 3.05292 4.1569 3.54167C4.1569 4.03042 3.71357 4.42708 3.16732 4.42708C2.62107 4.42708 2.17773 4.03042 2.17773 3.54167C2.17773 3.05292 2.62107 2.65625 3.16732 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 11.5107C1.96557 11.5107 0.990234 12.3834 0.990234 13.4587C0.990234 14.5339 1.96557 15.4066 3.16732 15.4066C4.36907 15.4066 5.3444 14.5339 5.3444 13.4587C5.3444 12.3834 4.36907 11.5107 3.16732 11.5107ZM3.16732 12.5732C3.71357 12.5732 4.1569 12.9699 4.1569 13.4587C4.1569 13.9474 3.71357 14.3441 3.16732 14.3441C2.62107 14.3441 2.17773 13.9474 2.17773 13.4587C2.17773 12.9699 2.62107 12.5732 3.16732 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 1.59375C8.29955 1.59375 7.32422 2.46642 7.32422 3.54167C7.32422 4.61692 8.29955 5.48958 9.5013 5.48958C10.7031 5.48958 11.6784 4.61692 11.6784 3.54167C11.6784 2.46642 10.7031 1.59375 9.5013 1.59375ZM9.5013 2.65625C10.0476 2.65625 10.4909 3.05292 10.4909 3.54167C10.4909 4.03042 10.0476 4.42708 9.5013 4.42708C8.95505 4.42708 8.51172 4.03042 8.51172 3.54167C8.51172 3.05292 8.95505 2.65625 9.5013 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 11.5107C8.29955 11.5107 7.32422 12.3834 7.32422 13.4587C7.32422 14.5339 8.29955 15.4066 9.5013 15.4066C10.7031 15.4066 11.6784 14.5339 11.6784 13.4587C11.6784 12.3834 10.7031 11.5107 9.5013 11.5107ZM9.5013 12.5732C10.0476 12.5732 10.4909 12.9699 10.4909 13.4587C10.4909 13.9474 10.0476 14.3441 9.5013 14.3441C8.95505 14.3441 8.51172 13.9474 8.51172 13.4587C8.51172 12.9699 8.95505 12.5732 9.5013 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 1.59375C14.6316 1.59375 13.6562 2.46642 13.6562 3.54167C13.6562 4.61692 14.6316 5.48958 15.8333 5.48958C17.0351 5.48958 18.0104 4.61692 18.0104 3.54167C18.0104 2.46642 17.0351 1.59375 15.8333 1.59375ZM15.8333 2.65625C16.3796 2.65625 16.8229 3.05292 16.8229 3.54167C16.8229 4.03042 16.3796 4.42708 15.8333 4.42708C15.2871 4.42708 14.8438 4.03042 14.8438 3.54167C14.8438 3.05292 15.2871 2.65625 15.8333 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 11.5107C14.6316 11.5107 13.6562 12.3834 13.6562 13.4587C13.6562 14.5339 14.6316 15.4066 15.8333 15.4066C17.0351 15.4066 18.0104 14.5339 18.0104 13.4587C18.0104 12.3834 17.0351 11.5107 15.8333 11.5107ZM15.8333 12.5732C16.3796 12.5732 16.8229 12.9699 16.8229 13.4587C16.8229 13.9474 16.3796 14.3441 15.8333 14.3441C15.2871 14.3441 14.8438 13.9474 14.8438 13.4587C14.8438 12.9699 15.2871 12.5732 15.8333 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M2.57422 4.95801V12.0413C2.57422 12.3346 2.84022 12.5726 3.16797 12.5726C3.49572 12.5726 3.76172 12.3346 3.76172 12.0413V4.95801C3.76172 4.66476 3.49572 4.42676 3.16797 4.42676C2.84022 4.42676 2.57422 4.66476 2.57422 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M8.90625 4.95801V12.0413C8.90625 12.3346 9.17225 12.5726 9.5 12.5726C9.82775 12.5726 10.0938 12.3346 10.0938 12.0413V4.95801C10.0938 4.66476 9.82775 4.42676 9.5 4.42676C9.17225 4.42676 8.90625 4.66476 8.90625 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.2409 4.95801V7.79134C15.2409 7.88909 15.1522 7.96842 15.043 7.96842H3.16797C2.84022 7.96842 2.57422 8.20642 2.57422 8.49967C2.57422 8.79292 2.84022 9.03092 3.16797 9.03092H15.043C15.8085 9.03092 16.4284 8.47559 16.4284 7.79134C16.4284 6.75788 16.4284 4.95801 16.4284 4.95801C16.4284 4.66476 16.1624 4.42676 15.8346 4.42676C15.5069 4.42676 15.2409 4.66476 15.2409 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Transmission</span>-->
+<!--                                            <p>Auto</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div class="bottom-content">-->
+<!--                                    <div class="card-button">-->
+<!--                                        <a title="Audi A4 2020 Sedan"-->
+<!--                                           href="{% static '/listing/audi-a4-2024-sedan/index.html' %}"-->
+<!--                                           class="btn-listing">View Details <i-->
+<!--                                                class="icon-motorx-readmore"></i></a>-->
+<!--                                    </div>-->
+<!--                                    <ul class="list-controller">-->
+<!--                                        <li>-->
+<!--                                            <a href="javascript:void(0)"-->
+<!--                                               class="tfcl-listing-favorite hv-tool "-->
+<!--                                               data-tfcl-car-id="1850" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add to Favorite"-->
+<!--                                               data-tfcl-title-not-favorite="Add to Favorite"-->
+<!--                                               data-tfcl-title-favorited="It is your favorite"-->
+<!--                                               data-tfcl-icon-not-favorite="far fa-heart"-->
+<!--                                               data-tfcl-icon-favorited="far fa-heart"><i class="far fa-heart"-->
+<!--                                                                                          aria-hidden="true"></i></a>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <a class="compare tfcl-compare-listing hv-tool" href="javascript:void(0)"-->
+<!--                                               data-listing-id="1850" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add Compare"-->
+<!--                                               title="Compare">-->
+<!--                                                <i class="far fa-plus"></i>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wrap-tfcl-listing-card cards-item col-xl-3 col-md-6 "-->
+<!--                         data-col="col-xl-3 col-md-6">-->
+<!--                        <div class="tfcl-listing-card">-->
+<!--                            <div class="featured-property tfcl-image-map" title="Chevrolet Corvette Stingray"-->
+<!--                                 data-image="{% static '/wp-content/uploads/2024/01/carr-31-3-660x471.webp' %}"-->
+<!--                                 data-id="1772"-->
+<!--                                 data-location="560 Northwest 118th Avenue, Plantation, Florida 33325, United States"-->
+<!--                                 data-price-prefix=""-->
+<!--                                 data-price-suffix=""-->
+<!--                                 data-price="$121,650">-->
+<!--                                <div class="group-meta">-->
+<!--                                    <div class="inner">-->
+<!--                    																												<span class="count-list-gallery view-gallery"-->
+<!--                                                                                                                                          data-mfp-event-->
+<!--                                                                                                                                          data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-31-3-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-57-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-33-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-14-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-43-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-34-1-660x471.webp&quot;]"><img-->
+<!--                                                                                                                                            src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/camera.svg' %}"-->
+<!--                                                                                                                                            alt="icon-map">6</span>-->
+<!--                                    </div>-->
+<!--                                    <span class="date-car">2022</span>-->
+<!--                                </div>-->
+<!--                                <a href="{% static '/listing/chevrolet-corvette-stingray/index.html' %}"-->
+<!--                                   title="Chevrolet Corvette Stingray">-->
+<!--                                    <div class="listing-images">-->
+<!--                                        <div class="hover-listing-image">-->
+<!--                                            <div class="wrap-hover-listing">-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Chevrolet Corvette Stingray">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-31-3-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Chevrolet Corvette Stingray">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-57-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Chevrolet Corvette Stingray">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-33-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item view-gallery" data-mfp-event-->
+<!--                                                     data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-31-3-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-57-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-33-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-14-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-43-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-34-1-660x471.webp&quot;]"-->
+<!--                                                     title="Chevrolet Corvette Stingray">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-14-660x471.webp' %}"-->
+<!--                                                             class="swiper-image tfcl-light-gallery"-->
+<!--                                                             alt="images">-->
+<!--                                                        <div class="overlay-limit">-->
+<!--                                                            <img decoding="async"-->
+<!--                                                                 src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/picture.svg' %}"-->
+<!--                                                                 class="icon-img" alt="icon-map">-->
+<!--                                                            <p>2 more photos</p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="bullet-hover-listing">-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="card-content">-->
+<!--                                <a href="{% static '/body/compact/index.html' %}" class="car-body">Compact</a>-->
+<!--                                <h3 class="tfcl-listing-title">-->
+<!--                                    <a title="Chevrolet Corvette Stingray"-->
+<!--                                       href="{% static '/listing/chevrolet-corvette-stingray/index.html' %}">Chevrolet-->
+<!--                                        Corvette Stingray</a>-->
+<!--                                </h3>-->
+<!--                                <div class="price">-->
+<!--                    													<span class="inner sale_price">-->
+<!--                    												$121,650											</span>-->
+<!--                                </div>-->
+<!--                                <ul class="infor-description">-->
+<!--                                    <li class="listing-information fuel">-->
+<!--                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"-->
+<!--                                             viewBox="0 0 23 23" fill="none">-->
+<!--                                            <g clip-path="url(#clip0_190_9250)">-->
+<!--                                                <path d="M13.6562 4.3125C13.6562 3.91553 13.3345 3.59375 12.9375 3.59375H5.75C5.35303 3.59375 5.03125 3.91553 5.03125 4.3125V10.0625C5.03125 10.4595 5.35303 10.7812 5.75 10.7812H12.9375C13.3345 10.7812 13.6562 10.4595 13.6562 10.0625V4.3125ZM12.2188 9.34375H6.46875V5.03125H12.2188V9.34375Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                                <path d="M21.9011 5.09652L19.0347 3.65902C18.6788 3.48073 18.2522 3.62569 18.0746 3.98048C17.897 4.33563 18.0431 4.76733 18.3982 4.94491L19.4898 5.49022C19.4606 5.56838 19.4229 5.65104 19.4229 5.73949C19.4229 6.6753 20.125 7.46566 20.8438 7.76326V16.5207C20.8438 16.9169 20.5212 17.2395 20.125 17.2395C19.7288 17.2395 19.4062 16.9169 19.4062 16.5207V10.7707C19.4062 9.03536 17.9688 7.58358 16.5312 7.24963V2.86449C16.5312 1.27924 15.2758 0 13.6906 0H5.06557C3.48032 0 2.15625 1.27924 2.15625 2.86449V18.9514L1.11604 19.4715C0.872473 19.5933 0.71875 19.8421 0.71875 20.1145V22.2707C0.71875 22.6677 1.07489 23 1.47182 23H17.2843C17.6812 23 17.9688 22.6677 17.9688 22.2707V20.1145C17.9688 19.8421 17.815 19.5933 17.5715 19.4715L16.5312 18.9514V8.74696C17.25 9.04457 17.9688 9.83493 17.9688 10.7707V16.5207C17.9688 17.7098 18.936 18.677 20.125 18.677C21.314 18.677 22.2812 17.7098 22.2812 16.5207V5.73949C22.2812 5.46713 22.1447 5.2183 21.9011 5.09652ZM16.5312 21.5625H2.15625V20.5588L3.19646 20.0387C3.44003 19.9169 3.59375 19.6681 3.59375 19.3957V2.86444C3.59375 2.07166 4.27274 1.4375 5.06557 1.4375H13.6906C14.4834 1.4375 15.0938 2.07166 15.0938 2.86449V19.3957C15.0938 19.6681 15.2475 19.9169 15.491 20.0387L16.5312 20.5588V21.5625Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                            </g>-->
+<!--                                            <defs>-->
+<!--                                                <clipPath id="clip0_190_9250">-->
+<!--                                                    <rect width="23" height="23" fill="white"/>-->
+<!--                                                </clipPath>-->
+<!--                                            </defs>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Fuel type</span>-->
+<!--                                            <p>Gasoline</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information mileage">-->
+<!--                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path d="M16.1488 5.05304C15.8966 4.78761 15.5007 4.74847 15.2059 4.95992C14.0954 5.75671 8.52514 9.76339 7.92649 10.3935C7.05836 11.3074 7.05836 12.7943 7.92649 13.7081C8.36056 14.165 8.93078 14.3935 9.50093 14.3935C10.0711 14.3935 10.6413 14.165 11.0754 13.7081C11.674 13.078 15.4803 7.21453 16.2373 6.04554C16.4381 5.73527 16.4009 5.31855 16.1488 5.05304ZM10.0257 12.6032C9.73635 12.9079 9.26547 12.9079 8.97613 12.6032C8.68675 12.2987 8.68672 11.8032 8.97598 11.4985C9.20858 11.2566 10.7901 10.0693 12.7359 8.64562C11.3834 10.6938 10.2555 12.3585 10.0257 12.6032Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M3.42263 15.6845L2.5064 16.155C1.83599 14.8955 1.48437 13.4898 1.48437 12.0508C1.48437 10.9964 1.66907 9.98664 2.00613 9.05535L3.05599 9.58543C3.15953 9.63769 3.26882 9.66246 3.37647 9.66246C3.65305 9.66246 3.91856 9.49898 4.04618 9.21891C4.22342 8.82988 4.06756 8.3632 3.69795 8.1766L2.66141 7.65324C3.94974 5.44152 6.17878 3.89953 8.75785 3.64914V4.82418C8.75785 5.25566 9.09013 5.60543 9.50004 5.60543C9.90995 5.60543 10.2422 5.25566 10.2422 4.82418V3.64855C11.1265 3.73328 11.9821 3.97031 12.7943 4.35625C13.1678 4.53379 13.6074 4.35883 13.7761 3.96566C13.9447 3.57238 13.7786 3.10969 13.405 2.93215C12.1742 2.34734 10.8604 2.05078 9.5 2.05078C6.96246 2.05078 4.57681 3.09094 2.78246 4.97969C0.988185 6.86848 0 9.37969 0 12.0508C0 14.0246 0.556566 15.9443 1.60954 17.6021C1.75138 17.8254 1.98587 17.9493 2.22701 17.9493C2.33663 17.9493 2.44766 17.9237 2.55197 17.8701L4.07346 17.0889C4.44188 16.8997 4.59484 16.432 4.41512 16.0442C4.2354 15.6564 3.79106 15.4954 3.42263 15.6845Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M18.1629 7.94051C17.9942 7.54727 17.5548 7.37227 17.181 7.54989C16.8074 7.72743 16.6413 8.19012 16.81 8.58336C17.2784 9.67547 17.5158 10.8422 17.5158 12.051C17.5158 13.4922 17.1631 14.9002 16.4907 16.1611L15.5341 15.6816C15.1641 15.4961 14.7212 15.6614 14.5449 16.0511C14.3687 16.4406 14.5259 16.9068 14.8959 17.0923L16.4545 17.8736C16.5571 17.9249 16.6658 17.9495 16.7732 17.9495C17.0144 17.9495 17.249 17.8255 17.3906 17.6024C18.4436 15.9445 19.0002 14.0248 19.0002 12.051C19.0002 10.619 18.7185 9.23602 18.1629 7.94051Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Mileage</span>-->
+<!--                                            <p>52201 km</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information transmission">-->
+<!--                                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 1.59375C1.96557 1.59375 0.990234 2.46642 0.990234 3.54167C0.990234 4.61692 1.96557 5.48958 3.16732 5.48958C4.36907 5.48958 5.3444 4.61692 5.3444 3.54167C5.3444 2.46642 4.36907 1.59375 3.16732 1.59375ZM3.16732 2.65625C3.71357 2.65625 4.1569 3.05292 4.1569 3.54167C4.1569 4.03042 3.71357 4.42708 3.16732 4.42708C2.62107 4.42708 2.17773 4.03042 2.17773 3.54167C2.17773 3.05292 2.62107 2.65625 3.16732 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 11.5107C1.96557 11.5107 0.990234 12.3834 0.990234 13.4587C0.990234 14.5339 1.96557 15.4066 3.16732 15.4066C4.36907 15.4066 5.3444 14.5339 5.3444 13.4587C5.3444 12.3834 4.36907 11.5107 3.16732 11.5107ZM3.16732 12.5732C3.71357 12.5732 4.1569 12.9699 4.1569 13.4587C4.1569 13.9474 3.71357 14.3441 3.16732 14.3441C2.62107 14.3441 2.17773 13.9474 2.17773 13.4587C2.17773 12.9699 2.62107 12.5732 3.16732 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 1.59375C8.29955 1.59375 7.32422 2.46642 7.32422 3.54167C7.32422 4.61692 8.29955 5.48958 9.5013 5.48958C10.7031 5.48958 11.6784 4.61692 11.6784 3.54167C11.6784 2.46642 10.7031 1.59375 9.5013 1.59375ZM9.5013 2.65625C10.0476 2.65625 10.4909 3.05292 10.4909 3.54167C10.4909 4.03042 10.0476 4.42708 9.5013 4.42708C8.95505 4.42708 8.51172 4.03042 8.51172 3.54167C8.51172 3.05292 8.95505 2.65625 9.5013 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 11.5107C8.29955 11.5107 7.32422 12.3834 7.32422 13.4587C7.32422 14.5339 8.29955 15.4066 9.5013 15.4066C10.7031 15.4066 11.6784 14.5339 11.6784 13.4587C11.6784 12.3834 10.7031 11.5107 9.5013 11.5107ZM9.5013 12.5732C10.0476 12.5732 10.4909 12.9699 10.4909 13.4587C10.4909 13.9474 10.0476 14.3441 9.5013 14.3441C8.95505 14.3441 8.51172 13.9474 8.51172 13.4587C8.51172 12.9699 8.95505 12.5732 9.5013 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 1.59375C14.6316 1.59375 13.6562 2.46642 13.6562 3.54167C13.6562 4.61692 14.6316 5.48958 15.8333 5.48958C17.0351 5.48958 18.0104 4.61692 18.0104 3.54167C18.0104 2.46642 17.0351 1.59375 15.8333 1.59375ZM15.8333 2.65625C16.3796 2.65625 16.8229 3.05292 16.8229 3.54167C16.8229 4.03042 16.3796 4.42708 15.8333 4.42708C15.2871 4.42708 14.8438 4.03042 14.8438 3.54167C14.8438 3.05292 15.2871 2.65625 15.8333 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 11.5107C14.6316 11.5107 13.6562 12.3834 13.6562 13.4587C13.6562 14.5339 14.6316 15.4066 15.8333 15.4066C17.0351 15.4066 18.0104 14.5339 18.0104 13.4587C18.0104 12.3834 17.0351 11.5107 15.8333 11.5107ZM15.8333 12.5732C16.3796 12.5732 16.8229 12.9699 16.8229 13.4587C16.8229 13.9474 16.3796 14.3441 15.8333 14.3441C15.2871 14.3441 14.8438 13.9474 14.8438 13.4587C14.8438 12.9699 15.2871 12.5732 15.8333 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M2.57422 4.95801V12.0413C2.57422 12.3346 2.84022 12.5726 3.16797 12.5726C3.49572 12.5726 3.76172 12.3346 3.76172 12.0413V4.95801C3.76172 4.66476 3.49572 4.42676 3.16797 4.42676C2.84022 4.42676 2.57422 4.66476 2.57422 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M8.90625 4.95801V12.0413C8.90625 12.3346 9.17225 12.5726 9.5 12.5726C9.82775 12.5726 10.0938 12.3346 10.0938 12.0413V4.95801C10.0938 4.66476 9.82775 4.42676 9.5 4.42676C9.17225 4.42676 8.90625 4.66476 8.90625 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.2409 4.95801V7.79134C15.2409 7.88909 15.1522 7.96842 15.043 7.96842H3.16797C2.84022 7.96842 2.57422 8.20642 2.57422 8.49967C2.57422 8.79292 2.84022 9.03092 3.16797 9.03092H15.043C15.8085 9.03092 16.4284 8.47559 16.4284 7.79134C16.4284 6.75788 16.4284 4.95801 16.4284 4.95801C16.4284 4.66476 16.1624 4.42676 15.8346 4.42676C15.5069 4.42676 15.2409 4.66476 15.2409 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Transmission</span>-->
+<!--                                            <p>Auto</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div class="bottom-content">-->
+<!--                                    <div class="card-button">-->
+<!--                                        <a title="Chevrolet Corvette Stingray"-->
+<!--                                           href="{% static '/listing/chevrolet-corvette-stingray/index.html' %}"-->
+<!--                                           class="btn-listing">View Details <i-->
+<!--                                                class="icon-motorx-readmore"></i></a>-->
+<!--                                    </div>-->
+<!--                                    <ul class="list-controller">-->
+<!--                                        <li>-->
+<!--                                            <a href="javascript:void(0)"-->
+<!--                                               class="tfcl-listing-favorite hv-tool "-->
+<!--                                               data-tfcl-car-id="1772" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add to Favorite"-->
+<!--                                               data-tfcl-title-not-favorite="Add to Favorite"-->
+<!--                                               data-tfcl-title-favorited="It is your favorite"-->
+<!--                                               data-tfcl-icon-not-favorite="far fa-heart"-->
+<!--                                               data-tfcl-icon-favorited="far fa-heart"><i class="far fa-heart"-->
+<!--                                                                                          aria-hidden="true"></i></a>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <a class="compare tfcl-compare-listing hv-tool" href="javascript:void(0)"-->
+<!--                                               data-listing-id="1772" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add Compare"-->
+<!--                                               title="Compare">-->
+<!--                                                <i class="far fa-plus"></i>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wrap-tfcl-listing-card cards-item col-xl-3 col-md-6 "-->
+<!--                         data-col="col-xl-3 col-md-6">-->
+<!--                        <div class="tfcl-listing-card">-->
+<!--                            <div class="featured-property tfcl-image-map" title="Porsche 718 Boxster 2024"-->
+<!--                                 data-image="{% static '/wp-content/uploads/2024/01/carr-57-1-660x471.webp' %}"-->
+<!--                                 data-id="1718"-->
+<!--                                 data-location="5224 Pine Hills Road, Pine Hills, Florida 32808, United States"-->
+<!--                                 data-price-prefix=""-->
+<!--                                 data-price-suffix=""-->
+<!--                                 data-price="$70,400">-->
+<!--                                <div class="group-meta">-->
+<!--                                    <div class="inner">-->
+<!--                    																												<span class="count-list-gallery view-gallery"-->
+<!--                                                                                                                                          data-mfp-event-->
+<!--                                                                                                                                          data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-57-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-45-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-37-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-14-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-32-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-48-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-31-2-660x471.webp&quot;]"><img-->
+<!--                                                                                                                                            src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/camera.svg' %}"-->
+<!--                                                                                                                                            alt="icon-map">7</span>-->
+<!--                                    </div>-->
+<!--                                    <span class="date-car">2024</span>-->
+<!--                                </div>-->
+<!--                                <a href="{% static '/listing/porsche-718-boxster-2024/index.html' %}"-->
+<!--                                   title="Porsche 718 Boxster 2024">-->
+<!--                                    <div class="listing-images">-->
+<!--                                        <div class="hover-listing-image">-->
+<!--                                            <div class="wrap-hover-listing">-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Porsche 718 Boxster 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-57-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Porsche 718 Boxster 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-45-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Porsche 718 Boxster 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-37-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item view-gallery" data-mfp-event-->
+<!--                                                     data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-57-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-45-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-37-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-14-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-32-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-48-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-31-2-660x471.webp&quot;]"-->
+<!--                                                     title="Porsche 718 Boxster 2024">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-14-660x471.webp' %}"-->
+<!--                                                             class="swiper-image tfcl-light-gallery"-->
+<!--                                                             alt="images">-->
+<!--                                                        <div class="overlay-limit">-->
+<!--                                                            <img decoding="async"-->
+<!--                                                                 src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/picture.svg' %}"-->
+<!--                                                                 class="icon-img" alt="icon-map">-->
+<!--                                                            <p>3 more photos</p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="bullet-hover-listing">-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="card-content">-->
+<!--                                <a href="{% static '/body/convertible/index.html' %}" class="car-body">Convertible</a>-->
+<!--                                <h3 class="tfcl-listing-title">-->
+<!--                                    <a title="Porsche 718 Boxster 2024"-->
+<!--                                       href="{% static '/listing/porsche-718-boxster-2024/index.html' %}">Porsche 718-->
+<!--                                        Boxster 2024</a>-->
+<!--                                </h3>-->
+<!--                                <div class="price">-->
+<!--                    													<span class="inner sale_price">-->
+<!--                    												$70,400											</span>-->
+<!--                                </div>-->
+<!--                                <ul class="infor-description">-->
+<!--                                    <li class="listing-information fuel">-->
+<!--                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"-->
+<!--                                             viewBox="0 0 23 23" fill="none">-->
+<!--                                            <g clip-path="url(#clip0_190_9250)">-->
+<!--                                                <path d="M13.6562 4.3125C13.6562 3.91553 13.3345 3.59375 12.9375 3.59375H5.75C5.35303 3.59375 5.03125 3.91553 5.03125 4.3125V10.0625C5.03125 10.4595 5.35303 10.7812 5.75 10.7812H12.9375C13.3345 10.7812 13.6562 10.4595 13.6562 10.0625V4.3125ZM12.2188 9.34375H6.46875V5.03125H12.2188V9.34375Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                                <path d="M21.9011 5.09652L19.0347 3.65902C18.6788 3.48073 18.2522 3.62569 18.0746 3.98048C17.897 4.33563 18.0431 4.76733 18.3982 4.94491L19.4898 5.49022C19.4606 5.56838 19.4229 5.65104 19.4229 5.73949C19.4229 6.6753 20.125 7.46566 20.8438 7.76326V16.5207C20.8438 16.9169 20.5212 17.2395 20.125 17.2395C19.7288 17.2395 19.4062 16.9169 19.4062 16.5207V10.7707C19.4062 9.03536 17.9688 7.58358 16.5312 7.24963V2.86449C16.5312 1.27924 15.2758 0 13.6906 0H5.06557C3.48032 0 2.15625 1.27924 2.15625 2.86449V18.9514L1.11604 19.4715C0.872473 19.5933 0.71875 19.8421 0.71875 20.1145V22.2707C0.71875 22.6677 1.07489 23 1.47182 23H17.2843C17.6812 23 17.9688 22.6677 17.9688 22.2707V20.1145C17.9688 19.8421 17.815 19.5933 17.5715 19.4715L16.5312 18.9514V8.74696C17.25 9.04457 17.9688 9.83493 17.9688 10.7707V16.5207C17.9688 17.7098 18.936 18.677 20.125 18.677C21.314 18.677 22.2812 17.7098 22.2812 16.5207V5.73949C22.2812 5.46713 22.1447 5.2183 21.9011 5.09652ZM16.5312 21.5625H2.15625V20.5588L3.19646 20.0387C3.44003 19.9169 3.59375 19.6681 3.59375 19.3957V2.86444C3.59375 2.07166 4.27274 1.4375 5.06557 1.4375H13.6906C14.4834 1.4375 15.0938 2.07166 15.0938 2.86449V19.3957C15.0938 19.6681 15.2475 19.9169 15.491 20.0387L16.5312 20.5588V21.5625Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                            </g>-->
+<!--                                            <defs>-->
+<!--                                                <clipPath id="clip0_190_9250">-->
+<!--                                                    <rect width="23" height="23" fill="white"/>-->
+<!--                                                </clipPath>-->
+<!--                                            </defs>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Fuel type</span>-->
+<!--                                            <p>Gasoline</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information mileage">-->
+<!--                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path d="M16.1488 5.05304C15.8966 4.78761 15.5007 4.74847 15.2059 4.95992C14.0954 5.75671 8.52514 9.76339 7.92649 10.3935C7.05836 11.3074 7.05836 12.7943 7.92649 13.7081C8.36056 14.165 8.93078 14.3935 9.50093 14.3935C10.0711 14.3935 10.6413 14.165 11.0754 13.7081C11.674 13.078 15.4803 7.21453 16.2373 6.04554C16.4381 5.73527 16.4009 5.31855 16.1488 5.05304ZM10.0257 12.6032C9.73635 12.9079 9.26547 12.9079 8.97613 12.6032C8.68675 12.2987 8.68672 11.8032 8.97598 11.4985C9.20858 11.2566 10.7901 10.0693 12.7359 8.64562C11.3834 10.6938 10.2555 12.3585 10.0257 12.6032Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M3.42263 15.6845L2.5064 16.155C1.83599 14.8955 1.48437 13.4898 1.48437 12.0508C1.48437 10.9964 1.66907 9.98664 2.00613 9.05535L3.05599 9.58543C3.15953 9.63769 3.26882 9.66246 3.37647 9.66246C3.65305 9.66246 3.91856 9.49898 4.04618 9.21891C4.22342 8.82988 4.06756 8.3632 3.69795 8.1766L2.66141 7.65324C3.94974 5.44152 6.17878 3.89953 8.75785 3.64914V4.82418C8.75785 5.25566 9.09013 5.60543 9.50004 5.60543C9.90995 5.60543 10.2422 5.25566 10.2422 4.82418V3.64855C11.1265 3.73328 11.9821 3.97031 12.7943 4.35625C13.1678 4.53379 13.6074 4.35883 13.7761 3.96566C13.9447 3.57238 13.7786 3.10969 13.405 2.93215C12.1742 2.34734 10.8604 2.05078 9.5 2.05078C6.96246 2.05078 4.57681 3.09094 2.78246 4.97969C0.988185 6.86848 0 9.37969 0 12.0508C0 14.0246 0.556566 15.9443 1.60954 17.6021C1.75138 17.8254 1.98587 17.9493 2.22701 17.9493C2.33663 17.9493 2.44766 17.9237 2.55197 17.8701L4.07346 17.0889C4.44188 16.8997 4.59484 16.432 4.41512 16.0442C4.2354 15.6564 3.79106 15.4954 3.42263 15.6845Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M18.1629 7.94051C17.9942 7.54727 17.5548 7.37227 17.181 7.54989C16.8074 7.72743 16.6413 8.19012 16.81 8.58336C17.2784 9.67547 17.5158 10.8422 17.5158 12.051C17.5158 13.4922 17.1631 14.9002 16.4907 16.1611L15.5341 15.6816C15.1641 15.4961 14.7212 15.6614 14.5449 16.0511C14.3687 16.4406 14.5259 16.9068 14.8959 17.0923L16.4545 17.8736C16.5571 17.9249 16.6658 17.9495 16.7732 17.9495C17.0144 17.9495 17.249 17.8255 17.3906 17.6024C18.4436 15.9445 19.0002 14.0248 19.0002 12.051C19.0002 10.619 18.7185 9.23602 18.1629 7.94051Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Mileage</span>-->
+<!--                                            <p>0</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information transmission">-->
+<!--                                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 1.59375C1.96557 1.59375 0.990234 2.46642 0.990234 3.54167C0.990234 4.61692 1.96557 5.48958 3.16732 5.48958C4.36907 5.48958 5.3444 4.61692 5.3444 3.54167C5.3444 2.46642 4.36907 1.59375 3.16732 1.59375ZM3.16732 2.65625C3.71357 2.65625 4.1569 3.05292 4.1569 3.54167C4.1569 4.03042 3.71357 4.42708 3.16732 4.42708C2.62107 4.42708 2.17773 4.03042 2.17773 3.54167C2.17773 3.05292 2.62107 2.65625 3.16732 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 11.5107C1.96557 11.5107 0.990234 12.3834 0.990234 13.4587C0.990234 14.5339 1.96557 15.4066 3.16732 15.4066C4.36907 15.4066 5.3444 14.5339 5.3444 13.4587C5.3444 12.3834 4.36907 11.5107 3.16732 11.5107ZM3.16732 12.5732C3.71357 12.5732 4.1569 12.9699 4.1569 13.4587C4.1569 13.9474 3.71357 14.3441 3.16732 14.3441C2.62107 14.3441 2.17773 13.9474 2.17773 13.4587C2.17773 12.9699 2.62107 12.5732 3.16732 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 1.59375C8.29955 1.59375 7.32422 2.46642 7.32422 3.54167C7.32422 4.61692 8.29955 5.48958 9.5013 5.48958C10.7031 5.48958 11.6784 4.61692 11.6784 3.54167C11.6784 2.46642 10.7031 1.59375 9.5013 1.59375ZM9.5013 2.65625C10.0476 2.65625 10.4909 3.05292 10.4909 3.54167C10.4909 4.03042 10.0476 4.42708 9.5013 4.42708C8.95505 4.42708 8.51172 4.03042 8.51172 3.54167C8.51172 3.05292 8.95505 2.65625 9.5013 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 11.5107C8.29955 11.5107 7.32422 12.3834 7.32422 13.4587C7.32422 14.5339 8.29955 15.4066 9.5013 15.4066C10.7031 15.4066 11.6784 14.5339 11.6784 13.4587C11.6784 12.3834 10.7031 11.5107 9.5013 11.5107ZM9.5013 12.5732C10.0476 12.5732 10.4909 12.9699 10.4909 13.4587C10.4909 13.9474 10.0476 14.3441 9.5013 14.3441C8.95505 14.3441 8.51172 13.9474 8.51172 13.4587C8.51172 12.9699 8.95505 12.5732 9.5013 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 1.59375C14.6316 1.59375 13.6562 2.46642 13.6562 3.54167C13.6562 4.61692 14.6316 5.48958 15.8333 5.48958C17.0351 5.48958 18.0104 4.61692 18.0104 3.54167C18.0104 2.46642 17.0351 1.59375 15.8333 1.59375ZM15.8333 2.65625C16.3796 2.65625 16.8229 3.05292 16.8229 3.54167C16.8229 4.03042 16.3796 4.42708 15.8333 4.42708C15.2871 4.42708 14.8438 4.03042 14.8438 3.54167C14.8438 3.05292 15.2871 2.65625 15.8333 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 11.5107C14.6316 11.5107 13.6562 12.3834 13.6562 13.4587C13.6562 14.5339 14.6316 15.4066 15.8333 15.4066C17.0351 15.4066 18.0104 14.5339 18.0104 13.4587C18.0104 12.3834 17.0351 11.5107 15.8333 11.5107ZM15.8333 12.5732C16.3796 12.5732 16.8229 12.9699 16.8229 13.4587C16.8229 13.9474 16.3796 14.3441 15.8333 14.3441C15.2871 14.3441 14.8438 13.9474 14.8438 13.4587C14.8438 12.9699 15.2871 12.5732 15.8333 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M2.57422 4.95801V12.0413C2.57422 12.3346 2.84022 12.5726 3.16797 12.5726C3.49572 12.5726 3.76172 12.3346 3.76172 12.0413V4.95801C3.76172 4.66476 3.49572 4.42676 3.16797 4.42676C2.84022 4.42676 2.57422 4.66476 2.57422 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M8.90625 4.95801V12.0413C8.90625 12.3346 9.17225 12.5726 9.5 12.5726C9.82775 12.5726 10.0938 12.3346 10.0938 12.0413V4.95801C10.0938 4.66476 9.82775 4.42676 9.5 4.42676C9.17225 4.42676 8.90625 4.66476 8.90625 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.2409 4.95801V7.79134C15.2409 7.88909 15.1522 7.96842 15.043 7.96842H3.16797C2.84022 7.96842 2.57422 8.20642 2.57422 8.49967C2.57422 8.79292 2.84022 9.03092 3.16797 9.03092H15.043C15.8085 9.03092 16.4284 8.47559 16.4284 7.79134C16.4284 6.75788 16.4284 4.95801 16.4284 4.95801C16.4284 4.66476 16.1624 4.42676 15.8346 4.42676C15.5069 4.42676 15.2409 4.66476 15.2409 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Transmission</span>-->
+<!--                                            <p>MT</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div class="bottom-content">-->
+<!--                                    <div class="card-button">-->
+<!--                                        <a title="Porsche 718 Boxster 2024"-->
+<!--                                           href="{% static '/listing/porsche-718-boxster-2024/index.html' %}"-->
+<!--                                           class="btn-listing">View Details <i-->
+<!--                                                class="icon-motorx-readmore"></i></a>-->
+<!--                                    </div>-->
+<!--                                    <ul class="list-controller">-->
+<!--                                        <li>-->
+<!--                                            <a href="javascript:void(0)"-->
+<!--                                               class="tfcl-listing-favorite hv-tool "-->
+<!--                                               data-tfcl-car-id="1718" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add to Favorite"-->
+<!--                                               data-tfcl-title-not-favorite="Add to Favorite"-->
+<!--                                               data-tfcl-title-favorited="It is your favorite"-->
+<!--                                               data-tfcl-icon-not-favorite="far fa-heart"-->
+<!--                                               data-tfcl-icon-favorited="far fa-heart"><i class="far fa-heart"-->
+<!--                                                                                          aria-hidden="true"></i></a>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <a class="compare tfcl-compare-listing hv-tool" href="javascript:void(0)"-->
+<!--                                               data-listing-id="1718" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add Compare"-->
+<!--                                               title="Compare">-->
+<!--                                                <i class="far fa-plus"></i>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="wrap-tfcl-listing-card cards-item col-xl-3 col-md-6 "-->
+<!--                         data-col="col-xl-3 col-md-6">-->
+<!--                        <div class="tfcl-listing-card">-->
+<!--                            <div class="featured-property tfcl-image-map" title="Acura TLX Type S PMC Edition"-->
+<!--                                 data-image="{% static '/wp-content/uploads/2024/01/carr-48-1-660x471.webp' %}"-->
+<!--                                 data-id="827"-->
+<!--                                 data-location="2633 Northeast 16th Avenue, Pompano Beach, Florida 33064, United States"-->
+<!--                                 data-price-prefix=""-->
+<!--                                 data-price-suffix=""-->
+<!--                                 data-price="$45,999">-->
+<!--                                <div class="group-meta">-->
+<!--                                    <div class="inner">-->
+<!--                    																												<span class="count-list-gallery view-gallery"-->
+<!--                                                                                                                                          data-mfp-event-->
+<!--                                                                                                                                          data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-48-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-36-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-45-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-31-3-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-33-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-35-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-01-1-660x471.webp&quot;]"><img-->
+<!--                                                                                                                                            src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/camera.svg' %}"-->
+<!--                                                                                                                                            alt="icon-map">7</span>-->
+<!--                                    </div>-->
+<!--                                    <span class="date-car">2018</span>-->
+<!--                                </div>-->
+<!--                                <a href="{% static '/listing/acura-tlx-type-s-pmc-edition/index.html' %}"-->
+<!--                                   title="Acura TLX Type S PMC Edition">-->
+<!--                                    <div class="listing-images">-->
+<!--                                        <div class="hover-listing-image">-->
+<!--                                            <div class="wrap-hover-listing">-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Acura TLX Type S PMC Edition">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-48-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Acura TLX Type S PMC Edition">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-36-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item"-->
+<!--                                                     title="Acura TLX Type S PMC Edition">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-45-1-660x471.webp' %}"-->
+<!--                                                             class="swiper-image lazy tfcl-light-gallery" alt="images">-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="listing-item view-gallery" data-mfp-event-->
+<!--                                                     data-gallery="[&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-48-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-36-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-45-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-31-3-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-33-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-35-1-660x471.webp&quot;,&quot;https:\/\/motorxwp.themesflat.com\/wp-content\/uploads\/2024\/01\/carr-01-1-660x471.webp&quot;]"-->
+<!--                                                     title="Acura TLX Type S PMC Edition">-->
+<!--                                                    <div class="images">-->
+<!--                                                        <img decoding="async"-->
+<!--                                                             src="{% static '/wp-content/uploads/2024/01/carr-31-3-660x471.webp' %}"-->
+<!--                                                             class="swiper-image tfcl-light-gallery"-->
+<!--                                                             alt="images">-->
+<!--                                                        <div class="overlay-limit">-->
+<!--                                                            <img decoding="async"-->
+<!--                                                                 src="{% static '/wp-content/plugins/tf-car-listing/includes/elementor-widget/assets/images/icons/picture.svg' %}"-->
+<!--                                                                 class="icon-img" alt="icon-map">-->
+<!--                                                            <p>3 more photos</p>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                                <div class="bullet-hover-listing">-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                    <div class="bl-item"></div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="card-content">-->
+<!--                                <a href="{% static '/body/sedan/index.html' %}" class="car-body">Sedan</a>-->
+<!--                                <h3 class="tfcl-listing-title">-->
+<!--                                    <a title="Acura TLX Type S PMC Edition"-->
+<!--                                       href="/listing/acura-tlx-type-s-pmc-edition/index.html">Acura TLX Type S PMC-->
+<!--                                        Edition</a>-->
+<!--                                </h3>-->
+<!--                                <div class="price">-->
+<!--                    													<span class="inner sale_price">-->
+<!--                    												$45,999											</span>-->
+<!--                                </div>-->
+<!--                                <ul class="infor-description">-->
+<!--                                    <li class="listing-information fuel">-->
+<!--                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"-->
+<!--                                             viewBox="0 0 23 23" fill="none">-->
+<!--                                            <g clip-path="url(#clip0_190_9250)">-->
+<!--                                                <path d="M13.6562 4.3125C13.6562 3.91553 13.3345 3.59375 12.9375 3.59375H5.75C5.35303 3.59375 5.03125 3.91553 5.03125 4.3125V10.0625C5.03125 10.4595 5.35303 10.7812 5.75 10.7812H12.9375C13.3345 10.7812 13.6562 10.4595 13.6562 10.0625V4.3125ZM12.2188 9.34375H6.46875V5.03125H12.2188V9.34375Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                                <path d="M21.9011 5.09652L19.0347 3.65902C18.6788 3.48073 18.2522 3.62569 18.0746 3.98048C17.897 4.33563 18.0431 4.76733 18.3982 4.94491L19.4898 5.49022C19.4606 5.56838 19.4229 5.65104 19.4229 5.73949C19.4229 6.6753 20.125 7.46566 20.8438 7.76326V16.5207C20.8438 16.9169 20.5212 17.2395 20.125 17.2395C19.7288 17.2395 19.4062 16.9169 19.4062 16.5207V10.7707C19.4062 9.03536 17.9688 7.58358 16.5312 7.24963V2.86449C16.5312 1.27924 15.2758 0 13.6906 0H5.06557C3.48032 0 2.15625 1.27924 2.15625 2.86449V18.9514L1.11604 19.4715C0.872473 19.5933 0.71875 19.8421 0.71875 20.1145V22.2707C0.71875 22.6677 1.07489 23 1.47182 23H17.2843C17.6812 23 17.9688 22.6677 17.9688 22.2707V20.1145C17.9688 19.8421 17.815 19.5933 17.5715 19.4715L16.5312 18.9514V8.74696C17.25 9.04457 17.9688 9.83493 17.9688 10.7707V16.5207C17.9688 17.7098 18.936 18.677 20.125 18.677C21.314 18.677 22.2812 17.7098 22.2812 16.5207V5.73949C22.2812 5.46713 22.1447 5.2183 21.9011 5.09652ZM16.5312 21.5625H2.15625V20.5588L3.19646 20.0387C3.44003 19.9169 3.59375 19.6681 3.59375 19.3957V2.86444C3.59375 2.07166 4.27274 1.4375 5.06557 1.4375H13.6906C14.4834 1.4375 15.0938 2.07166 15.0938 2.86449V19.3957C15.0938 19.6681 15.2475 19.9169 15.491 20.0387L16.5312 20.5588V21.5625Z"-->
+<!--                                                      fill="black"/>-->
+<!--                                            </g>-->
+<!--                                            <defs>-->
+<!--                                                <clipPath id="clip0_190_9250">-->
+<!--                                                    <rect width="23" height="23" fill="white"/>-->
+<!--                                                </clipPath>-->
+<!--                                            </defs>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Fuel type</span>-->
+<!--                                            <p>Gasoline</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information mileage">-->
+<!--                                        <svg width="19" height="20" viewBox="0 0 19 20" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path d="M16.1488 5.05304C15.8966 4.78761 15.5007 4.74847 15.2059 4.95992C14.0954 5.75671 8.52514 9.76339 7.92649 10.3935C7.05836 11.3074 7.05836 12.7943 7.92649 13.7081C8.36056 14.165 8.93078 14.3935 9.50093 14.3935C10.0711 14.3935 10.6413 14.165 11.0754 13.7081C11.674 13.078 15.4803 7.21453 16.2373 6.04554C16.4381 5.73527 16.4009 5.31855 16.1488 5.05304ZM10.0257 12.6032C9.73635 12.9079 9.26547 12.9079 8.97613 12.6032C8.68675 12.2987 8.68672 11.8032 8.97598 11.4985C9.20858 11.2566 10.7901 10.0693 12.7359 8.64562C11.3834 10.6938 10.2555 12.3585 10.0257 12.6032Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M3.42263 15.6845L2.5064 16.155C1.83599 14.8955 1.48437 13.4898 1.48437 12.0508C1.48437 10.9964 1.66907 9.98664 2.00613 9.05535L3.05599 9.58543C3.15953 9.63769 3.26882 9.66246 3.37647 9.66246C3.65305 9.66246 3.91856 9.49898 4.04618 9.21891C4.22342 8.82988 4.06756 8.3632 3.69795 8.1766L2.66141 7.65324C3.94974 5.44152 6.17878 3.89953 8.75785 3.64914V4.82418C8.75785 5.25566 9.09013 5.60543 9.50004 5.60543C9.90995 5.60543 10.2422 5.25566 10.2422 4.82418V3.64855C11.1265 3.73328 11.9821 3.97031 12.7943 4.35625C13.1678 4.53379 13.6074 4.35883 13.7761 3.96566C13.9447 3.57238 13.7786 3.10969 13.405 2.93215C12.1742 2.34734 10.8604 2.05078 9.5 2.05078C6.96246 2.05078 4.57681 3.09094 2.78246 4.97969C0.988185 6.86848 0 9.37969 0 12.0508C0 14.0246 0.556566 15.9443 1.60954 17.6021C1.75138 17.8254 1.98587 17.9493 2.22701 17.9493C2.33663 17.9493 2.44766 17.9237 2.55197 17.8701L4.07346 17.0889C4.44188 16.8997 4.59484 16.432 4.41512 16.0442C4.2354 15.6564 3.79106 15.4954 3.42263 15.6845Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path d="M18.1629 7.94051C17.9942 7.54727 17.5548 7.37227 17.181 7.54989C16.8074 7.72743 16.6413 8.19012 16.81 8.58336C17.2784 9.67547 17.5158 10.8422 17.5158 12.051C17.5158 13.4922 17.1631 14.9002 16.4907 16.1611L15.5341 15.6816C15.1641 15.4961 14.7212 15.6614 14.5449 16.0511C14.3687 16.4406 14.5259 16.9068 14.8959 17.0923L16.4545 17.8736C16.5571 17.9249 16.6658 17.9495 16.7732 17.9495C17.0144 17.9495 17.249 17.8255 17.3906 17.6024C18.4436 15.9445 19.0002 14.0248 19.0002 12.051C19.0002 10.619 18.7185 9.23602 18.1629 7.94051Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Mileage</span>-->
+<!--                                            <p>0</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                    <li class="listing-information transmission">-->
+<!--                                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none"-->
+<!--                                             xmlns="http://www.w3.org/2000/svg">-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 1.59375C1.96557 1.59375 0.990234 2.46642 0.990234 3.54167C0.990234 4.61692 1.96557 5.48958 3.16732 5.48958C4.36907 5.48958 5.3444 4.61692 5.3444 3.54167C5.3444 2.46642 4.36907 1.59375 3.16732 1.59375ZM3.16732 2.65625C3.71357 2.65625 4.1569 3.05292 4.1569 3.54167C4.1569 4.03042 3.71357 4.42708 3.16732 4.42708C2.62107 4.42708 2.17773 4.03042 2.17773 3.54167C2.17773 3.05292 2.62107 2.65625 3.16732 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M3.16732 11.5107C1.96557 11.5107 0.990234 12.3834 0.990234 13.4587C0.990234 14.5339 1.96557 15.4066 3.16732 15.4066C4.36907 15.4066 5.3444 14.5339 5.3444 13.4587C5.3444 12.3834 4.36907 11.5107 3.16732 11.5107ZM3.16732 12.5732C3.71357 12.5732 4.1569 12.9699 4.1569 13.4587C4.1569 13.9474 3.71357 14.3441 3.16732 14.3441C2.62107 14.3441 2.17773 13.9474 2.17773 13.4587C2.17773 12.9699 2.62107 12.5732 3.16732 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 1.59375C8.29955 1.59375 7.32422 2.46642 7.32422 3.54167C7.32422 4.61692 8.29955 5.48958 9.5013 5.48958C10.7031 5.48958 11.6784 4.61692 11.6784 3.54167C11.6784 2.46642 10.7031 1.59375 9.5013 1.59375ZM9.5013 2.65625C10.0476 2.65625 10.4909 3.05292 10.4909 3.54167C10.4909 4.03042 10.0476 4.42708 9.5013 4.42708C8.95505 4.42708 8.51172 4.03042 8.51172 3.54167C8.51172 3.05292 8.95505 2.65625 9.5013 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M9.5013 11.5107C8.29955 11.5107 7.32422 12.3834 7.32422 13.4587C7.32422 14.5339 8.29955 15.4066 9.5013 15.4066C10.7031 15.4066 11.6784 14.5339 11.6784 13.4587C11.6784 12.3834 10.7031 11.5107 9.5013 11.5107ZM9.5013 12.5732C10.0476 12.5732 10.4909 12.9699 10.4909 13.4587C10.4909 13.9474 10.0476 14.3441 9.5013 14.3441C8.95505 14.3441 8.51172 13.9474 8.51172 13.4587C8.51172 12.9699 8.95505 12.5732 9.5013 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 1.59375C14.6316 1.59375 13.6562 2.46642 13.6562 3.54167C13.6562 4.61692 14.6316 5.48958 15.8333 5.48958C17.0351 5.48958 18.0104 4.61692 18.0104 3.54167C18.0104 2.46642 17.0351 1.59375 15.8333 1.59375ZM15.8333 2.65625C16.3796 2.65625 16.8229 3.05292 16.8229 3.54167C16.8229 4.03042 16.3796 4.42708 15.8333 4.42708C15.2871 4.42708 14.8438 4.03042 14.8438 3.54167C14.8438 3.05292 15.2871 2.65625 15.8333 2.65625Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.8333 11.5107C14.6316 11.5107 13.6562 12.3834 13.6562 13.4587C13.6562 14.5339 14.6316 15.4066 15.8333 15.4066C17.0351 15.4066 18.0104 14.5339 18.0104 13.4587C18.0104 12.3834 17.0351 11.5107 15.8333 11.5107ZM15.8333 12.5732C16.3796 12.5732 16.8229 12.9699 16.8229 13.4587C16.8229 13.9474 16.3796 14.3441 15.8333 14.3441C15.2871 14.3441 14.8438 13.9474 14.8438 13.4587C14.8438 12.9699 15.2871 12.5732 15.8333 12.5732Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M2.57422 4.95801V12.0413C2.57422 12.3346 2.84022 12.5726 3.16797 12.5726C3.49572 12.5726 3.76172 12.3346 3.76172 12.0413V4.95801C3.76172 4.66476 3.49572 4.42676 3.16797 4.42676C2.84022 4.42676 2.57422 4.66476 2.57422 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M8.90625 4.95801V12.0413C8.90625 12.3346 9.17225 12.5726 9.5 12.5726C9.82775 12.5726 10.0938 12.3346 10.0938 12.0413V4.95801C10.0938 4.66476 9.82775 4.42676 9.5 4.42676C9.17225 4.42676 8.90625 4.66476 8.90625 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                            <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                                  d="M15.2409 4.95801V7.79134C15.2409 7.88909 15.1522 7.96842 15.043 7.96842H3.16797C2.84022 7.96842 2.57422 8.20642 2.57422 8.49967C2.57422 8.79292 2.84022 9.03092 3.16797 9.03092H15.043C15.8085 9.03092 16.4284 8.47559 16.4284 7.79134C16.4284 6.75788 16.4284 4.95801 16.4284 4.95801C16.4284 4.66476 16.1624 4.42676 15.8346 4.42676C15.5069 4.42676 15.2409 4.66476 15.2409 4.95801Z"-->
+<!--                                                  fill="white"/>-->
+<!--                                        </svg>-->
+<!--                                        <div class="inner">-->
+<!--                                            <span>Transmission</span>-->
+<!--                                            <p>Auto</p>-->
+<!--                                        </div>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div class="bottom-content">-->
+<!--                                    <div class="card-button">-->
+<!--                                        <a title="Acura TLX Type S PMC Edition"-->
+<!--                                           href="{% static '/listing/acura-tlx-type-s-pmc-edition/index.html' %}"-->
+<!--                                           class="btn-listing">View Details <i-->
+<!--                                                class="icon-motorx-readmore"></i></a>-->
+<!--                                    </div>-->
+<!--                                    <ul class="list-controller">-->
+<!--                                        <li>-->
+<!--                                            <a href="javascript:void(0)"-->
+<!--                                               class="tfcl-listing-favorite hv-tool "-->
+<!--                                               data-tfcl-car-id="827" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add to Favorite"-->
+<!--                                               data-tfcl-title-not-favorite="Add to Favorite"-->
+<!--                                               data-tfcl-title-favorited="It is your favorite"-->
+<!--                                               data-tfcl-icon-not-favorite="far fa-heart"-->
+<!--                                               data-tfcl-icon-favorited="far fa-heart"><i class="far fa-heart"-->
+<!--                                                                                          aria-hidden="true"></i></a>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <a class="compare tfcl-compare-listing hv-tool" href="javascript:void(0)"-->
+<!--                                               data-listing-id="827" data-toggle="tooltip"-->
+<!--                                               data-tooltip="Add Compare"-->
+<!--                                               title="Compare">-->
+<!--                                                <i class="far fa-plus"></i>-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+                <div class="overlay-filter-tab" style="display: none;">
+<!--                    <div class="filter-loader"></div>-->
+                </div>
+<!--                <div class="pagination-wrap">-->
+<!--                    <div class="tfcl-pagination paging-navigation paging-navigation-ajax clearfix"><span-->
+<!--                            aria-current="page" class="page-numbers current">1</span>-->
+<!--                        <a class="page-numbers" href="index6146.html?paged=2">2</a>-->
+<!--                        <a class="page-numbers" href="index8a68.html?paged=3">3</a>-->
+<!--                        <a class="next page-numbers" href="index6146.html?paged=2"><i-->
+<!--                                class="fas fa-angle-double-right"></i></a></div>-->
+<!--                </div>-->
+            </div>
+        </div>
+        <div class="fixed-map-stopper"></div>
+
+    </div><!-- #content -->
+</div><!-- #main-content -->
+
+{% endblock %}

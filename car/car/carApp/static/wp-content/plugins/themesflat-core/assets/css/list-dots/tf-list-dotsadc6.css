@@ -1,0 +1,177 @@
+.tf-list-dots {
+    position: relative;
+}
+
+.tf-list-dots .image img {
+    width: 100%;
+}
+
+.item-dot {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.item-dot::after {
+    content: '\e93f';
+    font-family: 'motorx';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #000;
+    font-size: 12px;
+    line-height: 36px;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+@keyframes dot-animation {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0.6
+    }
+
+    100% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        opacity: 0
+    }
+}
+
+.item-dot.active::after {
+    content: '\e948';
+    color: #fff;
+}
+
+.item-dot.active {
+    background: #D01818;
+    z-index: 10;
+}
+
+.item-dot .inner {
+    width: fit-content;
+    position: absolute;
+    padding: 14px 30px;
+    padding-top: 11px;
+    padding-bottom: 20px;
+    text-align: left;
+    background: #fff;
+    border-radius: 0px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+}
+
+.item-dot:hover .inner,
+.item-dot.active .inner {
+    opacity: 1;
+    visibility: visible;
+}
+
+.item-dot:hover {
+    z-index: 10;
+}
+
+.item-dot .inner::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%) rotate(0deg);
+    position: absolute;
+    top: 50%;
+    left: -13px;
+    border-radius: 2px;
+    background: #fff;
+    clip-path: polygon(0 50%, 80% 100%, 80% 0);
+}
+
+.item-dot .inner .title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    width: max-content;
+}
+
+.item-dot .inner .description {
+    color: #86898E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+
+.item-dot .inner .price {
+    color: #D01818;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.item-dot .inner .price span {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-left: 2px;
+    color: #86898E;
+}
+
+.item-dot .inner .group-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.item-dot.left .inner {
+    left: unset;
+    right: 54px;
+}
+
+.item-dot.left .inner::after {
+    transform: translateY(-50%) rotate(60deg);
+    left: unset;
+    right: -9px;
+}
+
+
+@media (max-width: 500px) {
+    .item-dot {
+        width: 20px;
+        height: 20px;
+    }
+    .item-dot::after {
+        font-size: 8px;
+    }
+
+    .item-dot .inner {
+        padding: 5px 15px;
+    }
+    
+    .item-dot .inner .price,
+    .item-dot .inner .title {
+        font-size: 12px;
+    }
+    .item-dot .inner .price span {
+        font-size: 10px;
+    }
+}

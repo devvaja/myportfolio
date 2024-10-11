@@ -1,0 +1,93 @@
+/* Login Header */
+
+.widget_login_menu_widget .user-display-name {
+    cursor: pointer;
+}
+
+.widget_login_menu_widget .user-display-name img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.14);
+}
+
+.widget_login_menu_widget .user-display-name::after {
+    display: none;
+}
+
+/* Login */
+
+.tfcl_account h4 {
+    margin-bottom: 44px;
+}
+
+.tfcl_account input,
+.tfcl_account textarea {
+    border-radius: 8px !important;
+    border: 1px solid #EFEFF2;
+    background: #FFF;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 17px;
+}
+
+.tfcl_account input::placeholder,
+.tfcl_account textarea::placeholder {
+    color: #83827f7e;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tfcl_account .form-group {
+    margin-bottom: 20px;
+}
+
+.tfcl_account button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px !important;
+}
+
+.tfcl_account .tfcl_notification {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tfcl_account .tfcl-reset-password {
+    display: block;
+    text-align: right;
+}
+
+.tfcl-login-google.tf-btn{
+    border-radius: 4px;
+}
+
+.tfcl-login-google.tf-btn i.fa-google {
+    margin-right: 5px;
+}
+
+.client-account {
+    padding: 20px;
+    background: var(--theme-primary-rgba);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.client-account li {
+    color: #000;
+    font-size: 16px;
+}
+
+.client-account li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.client-account li span {
+    font-weight: 700;
+    color: var(--theme-primary-color);
+}

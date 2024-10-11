@@ -1,0 +1,455 @@
+/*  widget dealer contact */
+.widget_dealer_contact_widget .inner-widget {
+    text-align: center;
+    background: #F4F6F8;
+    padding: 41px 38px 31px 38px;
+}
+
+.widget_dealer_contact_widget .inner-widget .dealer-avatar {
+    width: 100px;
+    margin: 0 auto;
+    height: 100px;
+    text-align: center;
+}
+
+.widget_dealer_contact_widget .inner-widget .dealer-avatar img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.widget_dealer_contact_widget .inner-widget .dealer-name h4 {
+    color: #202732;
+    text-align: center;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.widget_dealer_contact_widget .inner-widget .dealer-socials {
+    margin-bottom: 37px;
+}
+
+.widget_dealer_contact_widget .inner-widget .dealer-contact-btn {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: var(--theme-primary-color);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.widget_dealer_contact_widget .inner-widget .dealer-contact-btn:hover {
+    background-color: #000;
+}
+
+.widget_dealer_contact_widget .dealer-socials-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    justify-content: center;
+}
+
+.widget_dealer_contact_widget .dealer-socials-list .dealer-social-item {
+    width: 42px;
+    height: 37px;
+    line-height: 37px;
+    padding: 0;
+    flex-shrink: 0;
+    border: 1px solid #E8E8E8;
+    background-color: transparent;
+}
+
+.widget_dealer_contact_widget .dealer-socials-list .dealer-social-item i {
+    color: #454950;
+}
+
+.widget_dealer_contact_widget .dealer-socials-list .dealer-social-item:hover {
+    background-color: var(--theme-primary-color);
+}
+
+.widget_dealer_contact_widget .dealer-socials-list .dealer-social-item:hover i {
+    color: #fff;
+}
+
+.widget-dealer-contact .inner-widget .dealer-avatar {
+    margin-bottom: 18px;
+}
+
+.widget-dealer-contact .inner-widget .dealer-rating {
+    margin-bottom: 15px;
+}
+
+.widget-dealer-contact .inner-widget .dealer-rating i {
+    color: rgba(255, 193, 7, 1);
+}
+
+.widget-dealer-contact .inner-widget .dealer-description {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-height: 28.8px;
+    font-size: 16px;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-weight: 400;
+}
+
+.single-dealer .tfcl-sidebar,
+.author .tfcl-sidebar {
+    margin-bottom: 68px;
+}
+
+/* widget dealer location */
+.widget_dealer_location_widget .widget-inner {
+    padding: 52px 27px 23px 32px;
+    background-color: #F4F6F8;
+}
+
+.widget_contact_user_widget .widget-inner {
+    padding: 62px 35px 76px 31px;
+    background-color: #F4F6F8;
+}
+
+.widget_dealer_location_widget .widget-inner .widget-title,
+.widget_contact_user_widget .widget-inner .widget-title {
+    color: #000;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    border-left: 2px solid var(--theme-primary-color);
+    padding-left: 8px;
+    margin-bottom: 25px;
+}
+
+/*  widget author contact form*/
+
+.tfcl-author-contact-listing-wrap {
+    background: #F8F8F8;
+    padding: 48px 38px;
+    border-radius: 10px;
+}
+
+.tfcl-author-contact-listing-wrap .author-contact-wrap {
+    display: flex;
+    margin-bottom: 38px;
+}
+
+.tfcl-author-contact-listing-wrap .author-contact-avatar img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.tfcl-author-contact-listing-wrap .author-contact-avatar {
+    max-width: 69px;
+    max-height: 69px;
+    margin-right: 24px;
+    flex-shrink: 0;
+    margin-top: -4px;
+}
+
+.tfcl-author-contact-listing-wrap .author-contact-info .name {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1px;
+}
+
+.tfcl-author-contact-listing-wrap .author-contact-info .desc {
+    color: #83827F;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tfcl-author-contact-listing-wrap .author-contact-info a,
+.tfcl-author-contact-listing-wrap .author-contact-info .group-phone {
+    color: #312323;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+}
+
+.tfcl-author-contact-listing-wrap .author-contact-info a i,
+.tfcl-author-contact-listing-wrap .author-contact-info .group-phone i {
+    color: var(--theme-primary-color);
+    margin-right: 7px;
+}
+
+.tfcl-author-contact-listing-wrap .author-contact-info a:hover {
+    color: var(--theme-primary-color);
+}
+
+.tfcl-author-contact-listing-wrap .author-contact-info .group-phone {
+    display: flex;
+    align-items: center;
+}
+
+.tfcl-author-contact-listing-wrap input,
+.tfcl-author-contact-listing-wrap textarea {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 18px !important;
+}
+
+.tfcl-author-contact-listing-wrap input::placeholder,
+.tfcl-author-contact-listing-wrap textarea::placeholder {
+    color: rgba(20, 33, 43, 0.80);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tfcl-author-contact-listing-wrap textarea {
+    height: 183px;
+}
+
+.tfcl-author-contact-listing-wrap button {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+}
+
+.tfcl-author-contact-listing-wrap button i {
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+/* widget form single */
+
+.widget_order_form_listing_widget,
+.widget_order_form_listing_widget .form-sc-1>.inner,
+.widget_order_form_listing_widget .form-sc-2>.inner {
+    border-radius: 16px;
+    border: 1px solid #EEEEF0;
+    background: #FFF;
+    box-shadow: 0px 9px 35px 0px rgba(70, 88, 152, 0.07);
+    padding: 40px 40px 40px 40px;
+}
+
+.widget_order_form_listing_widget .button-form-1,
+.widget_order_form_listing_widget .button-form-2 {
+    border-radius: 7px;
+    background: var(--theme-primary-color);
+    width: 100%;
+    padding: 17px 30px;
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid var(--theme-primary-color);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.widget_order_form_listing_widget .button-form-1 i,
+.widget_order_form_listing_widget .button-form-2 i {
+    margin-left: 15px;
+}
+
+.widget_order_form_listing_widget .button-form-1 {
+    margin-bottom: 16px;
+}
+
+.widget_order_form_listing_widget .button-form-1:hover,
+.widget_order_form_listing_widget .button-form-2 {
+    background: transparent;
+    color: var(--theme-primary-color);
+}
+
+.widget_order_form_listing_widget .button-form-2:hover {
+    background: var(--theme-primary-color);
+    color: #fff;
+}
+
+.widget_order_form_listing_widget .form-sc-2,
+.widget_order_form_listing_widget .form-sc-1 {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.widget_order_form_listing_widget .form-sc-2.active,
+.widget_order_form_listing_widget .form-sc-1.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.widget_order_form_listing_widget .form-sc-1,
+.widget_order_form_listing_widget .form-sc-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.widget_order_form_listing_widget .form-sc-1>.inner,
+.widget_order_form_listing_widget .form-sc-2>.inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    max-width: 660px;
+    z-index: 9999;
+    margin: 0 auto;
+}
+
+.widget_order_form_listing_widget .form-sc-1 .overlay-form,
+.widget_order_form_listing_widget .form-sc-2 .overlay-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    content: '';
+    cursor: pointer;
+}
+
+.widget_order_form_listing_widget .inner .title {
+    color: #0D1637;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    border: none;
+    padding: 0;
+    border-left: 1px solid var(--theme-primary-color);
+    padding-left: 7px;
+    margin-bottom: 40px;
+    background: unset;
+    border-radius: unset;
+    cursor: default;
+    line-height: 22px;
+}
+
+.widget_order_form_listing_widget .inner .title i {
+    display: none;
+}
+
+.widget_order_form_listing_widget .button-close {
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.widget_order_form_listing_widget .button-close:hover {
+    color: var(--theme-primary-color);
+    transform: rotate(-90deg);
+}
+
+.tfcl_single_sidebar.index {
+    z-index: 9999;
+}
+
+.widget_order_form_listing_widget .inner input,
+.widget_order_form_listing_widget .inner .group-form .nice-select,
+.tfcl-author-contact-listing-form .group-form input,
+.tfcl-author-contact-listing-form .group-form textarea {
+    margin-bottom: 0px !important;
+}
+
+.widget_order_form_listing_widget .inner .group-form,
+.tfcl-author-contact-listing-form .group-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.widget_order_form_listing_widget .inner .group-form input,
+.widget_order_form_listing_widget .inner .group-form .nice-select,
+.tfcl-author-contact-listing-form .group-form input,
+.tfcl-author-contact-listing-form .group-form textarea {
+    padding-left: 50px !important;
+}
+
+.widget_order_form_listing_widget .inner .group-form i,
+.tfcl-author-contact-listing-form .group-form i {
+    position: absolute;
+    top: 50%;
+    left: 23px;
+    color: #000;
+    transform: translateY(-50%);
+}
+
+.tfcl-author-contact-listing-form .group-form.textarea i {
+    transform: unset;
+    top: 22px;
+}
+
+.widget_order_form_listing_widget .inner input[type="submit"] {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 7px;
+    padding: 19px 30px;
+}
+
+.tfcl-author-contact-listing-form .group-form input,
+.tfcl-author-contact-listing-form .group-form textarea {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.widget_order_form_listing_widget .wpcf7-spinner {
+    display: none;
+}
+
+.widget_order_form_listing_widget .inner input[type="submit"]:hover {
+    background: #000;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .widget_order_form_listing_widget .form-sc-1>.inner,
+    .widget_order_form_listing_widget .form-sc-2>.inner {
+        max-width: 95%;
+        margin: 15px;
+    }
+}

@@ -1,0 +1,84 @@
+/* Search filter */
+.search-filter-wrap .search-filter-inner {
+    padding: 20px 14px 30px 14px;
+    border-radius: 11px;
+    border: 1px solid #E7EBF3;
+}
+
+.search-filter-wrap .search-filter-inner .nice-select {
+    border-radius: 6px;
+    border: 1px solid #E7EAF3;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.01);
+}
+
+.search-filter-wrap .search-filter-title {
+    color: #000;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    border-left: 2px solid var(--theme-primary-color);
+    padding-left: 8px;
+    margin-bottom: 25px;
+}
+
+.search-filter-wrap .search-filter-inner label,
+.search-filter-wrap .btn-enable-features {
+    color: #595960;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.search-filter-wrap .search-filter-inner .nice-select {
+    padding: 20px 22px;
+    margin-bottom: 0;
+}
+
+.search-filter-wrap .search-filter-inner .nice-select .current:after {
+    font-weight: 900;
+}
+
+.search-filter-wrap .search-filter-inner .form-item {
+    margin-bottom: 22px;
+}
+
+.search-filter-wrap .search-filter-inner .nice-select .current {
+    color: #181818;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.search-filter-wrap .tfcl-range-slider-filter {
+    padding: 0;
+}
+
+.search-filter-wrap .btn-enable-features i {
+    display: none;
+}
+
+.search-filter-wrap .features-list {
+    display: block !important;
+}
+
+.search-filter-wrap .features-list .checkbox-item {
+    width: calc(100% - 30px) !important;
+}
+
+.search-filter-wrap .enable-features .btn-enable-features i {
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+.search-filter-wrap .features-list .wrap-checkbox {
+    max-height: 190px;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+.search-filter-wrap .features-list .wrap-checkbox label {
+    cursor: pointer;
+}
