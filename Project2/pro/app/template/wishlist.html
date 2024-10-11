@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .cart-wrap {
+        padding: 40px 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .main-heading {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    .table-wishlist table {
+        width: 100%;
+    }
+    .table-wishlist thead {
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 5px;
+    }
+    .table-wishlist thead tr th {
+        padding: 8px 0 18px;
+        color: #484848;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .table-wishlist tr td {
+        padding: 25px 0;
+        vertical-align: middle;
+    }
+    .table-wishlist tr td .img-product {
+        width: 72px;
+        float: left;
+        margin-left: 8px;
+        margin-right: 31px;
+        line-height: 63px;
+    }
+    .table-wishlist tr td .img-product img {
+        width: 100%;
+    }
+    .table-wishlist tr td .name-product {
+        font-size: 15px;
+        color: #484848;
+        padding-top: 8px;
+        line-height: 24px;
+        width: 50%;
+    }
+    .table-wishlist tr td.price {
+        font-weight: 600;
+    }
+    .round-black-btn {
+        border-radius: 25px;
+        background: #212529;
+        color: #fff;
+        padding: 5px 20px;
+        display: inline-block;
+        border: solid 2px #212529;
+        transition: all 0.5s ease-in-out 0s;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .round-black-btn:hover,
+    .round-black-btn:focus {
+        background: transparent;
+        color: #212529;
+        text-decoration: none;
+    }
+    .trash-icon {
+        font-size: 20px;
+        color: #212529;
+    }
+</style>
+
+<div class="cart-wrap" style="padding-top:10%">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-heading mb-10">My Wishlist</div>
+                <div class="table-wishlist">
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th width="45%">Product</th>
+                                <th width="15%">Product Price</th>
+                                <th width="15%">Product Description</th>
+                                <th width="15%">Product Add to Cart</th>
+                                <th width="10%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in wishlist_items %}
+                            <tr>
+                                <td width="45%">
+                                    <div class="display-flex align-center">
+                                        <div class="img-product">
+                                            <img src="{{ item.product.product_image.url }}" alt="{{ item.product.product_name }}" class="mCS_img_loaded">
+                                        </div>
+                                        <div class="name-product">
+                                            {{ item.product.product_name }}
+                                        </div>
+                                    </div>
+                                </td>
+                                <td width="15%" class="price">${{ item.product.product_price }}</td>
+                                <td width="15%">{{ item.product.product_description }}</td>
+                                <td width="15%"><a class="round-black-btn small-btn" href="{% url 'cart' item.product.id %}">Add to Cart</a></td>
+                                <td width="10%" class="text-center"><a href="/deleteProduct/{{item.id}}" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,379 @@
+{% extends 'base.html' %}
+{% load  static %}
+{% block content %}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Numans" rel="stylesheet">
+<style>
+<!--	@import url('https://fonts.googleapis.com/css?family=Numans');-->
+
+.dev{
+background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+margin-top:-10px;
+}
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: navy;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+.bg{    display: flex;
+    justify-content: center;
+    padding-left: 175%;
+    padding-top: 15%;
+    padding-bottom: 15%;}
+
+.links a{
+margin-left: 4px;
+}
+</style>
+
+{% for message in messages %}
+<div class="alert alert{{ message.tags }} alert-dismissble fade show" role="alert"></div>
+<strong>message</strong>{{ message }}
+<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+</button>
+{% endfor %}
+
+<div class="rt-header-menu mean-container" id="meanmenu">
+    <div class="mean-bar">
+    	<a href="/index.html" alt="Panpie - Restaurant WordPress Theme"><img width='600' height='218' src='{% static "/wp-content/themes/panpie/assets/img/logo-dark.png" %}' alt='Panpie - Restaurant WordPress Theme'></a>
+
+
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<div class="info-menu-bar">
+		<div class="cart-icon-area">
+		<a href="../cart/index.html" ><i class="fas fa-shopping-cart" aria-hidden="true"></i><span class="cart-icon-num">0</span> – <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#036;</span>0.00</span></a>
+	</div>
+			<div class="header-search-box">
+		<a class="glass-icon" href="#header-search" title="Search">
+			<i class="fas fa-search"></i>
+		</a>
+		<a class="cross-icon" href="#header-cross" title="Search">
+		  <i class="fa fa-times" aria-hidden="true"></i>
+		</a>
+		<div class="header-search-field">
+			<form role="search" method="get" action="https://radiustheme.com/demo/wordpress/themes/panpie/" class="search-form">
+				<input required="" type="text" id="search-form-5f51fb188e3b0" class="search-field" placeholder="Search …" value="" name="s">
+				<button class="search-button" type="submit">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
+			</form>
+		</div>
+	</div>
+	</div>
+
+        <span class="sidebarBtn ">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </span>
+    </div>
+
+    <div class="rt-slide-nav">
+        <div class="offscreen-navigation">
+            <nav class="menu-main-menu-container"><ul id="menu-main-menu-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-25"><a href="#">HOME</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2477"><a href="../index.html">Home 1</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3288"><a href="../home-2/index.html">Home 2</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4963"><a href="../home-3/index.html">Home 3</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4962"><a href="../home-4/index.html">Home 4</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5499"><a href="../home-5/index.html">Home 5</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5652"><a href="../home-6/index.html">Home 6</a></li>
+</ul>
+</li>
+<li class="mega-menu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26"><a href="#">MENU</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5353"><a href="#">Default Menu (Woo)</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3326"><a href="../food-menu-01/index.html">Food Menu 01</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3325"><a href="../food-menu-02/index.html">Food Menu 02</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3328"><a href="../shop/index.html">Food Menu 03</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4949"><a href="../food-menu-04/index.html">Food Menu 04</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4948"><a href="../food-menu-05/index.html">Food Menu 05</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5067"><a href="../food-menu-06/index.html">Food Menu 06</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5205"><a href="#">Food Menu Plugin Grid</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5218"><a href="../menu-grid-01/index.html">Menu Grid 01</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5217"><a href="../menu-grid-02/index.html">Menu Grid 02</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5216"><a href="../menu-grid-03/index.html">Menu Grid 03</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5215"><a href="../menu-grid-04/index.html">Menu Grid 04</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5356"><a href="../woocommerce-grid-01/index.html">WooCommerce Grid 01</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5355"><a href="../woocommerce-grid-02/index.html">WooCommerce Grid 02</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5206"><a href="#">Food Menu Plugin Filter</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5214"><a href="../menu-isotope-01/index.html">Menu Isotope 01</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5213"><a href="../menu-isotope-02/index.html">Menu Isotope 02</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5212"><a href="../menu-isotope-03/index.html">Menu Isotope 03</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5260"><a href="../menu-isotope-04/index.html">Menu Isotope 04</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5209"><a href="../menu-category-01/index.html">Menu Category 01</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5208"><a href="../menu-category-02/index.html">Menu Category 02</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5207"><a href="#">Food Menu Plugin Slider</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5211"><a href="../menu-carousel-01/index.html">Menu Carousel 01</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5210"><a href="../menu-carousel-02/index.html">Menu Carousel 02</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5263"><a href="../menu-carousel-03/index.html">Menu Carousel 03</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5262"><a href="../menu-carousel-04/index.html">Menu Carousel 04</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5354"><a href="../woocommerce-carosuel-01/index.html">WooCommerce Carosuel 01</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="mega-menu menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor menu-item-has-children menu-item-27"><a href="#">PAGES</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-598"><a href="#">Pages</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="../about-us/index.html">About Us</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"><a href="../faqs/index.html">FAQ’s</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-104"><a href="404.html">404 Error</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-100 current_page_item menu-item-102"><a href="index.html" aria-current="page">Contact</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-599"><a href="#">Gallery Page</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-631"><a href="../gallery-1/index.html">Gallery 1</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-630"><a href="../gallery-2/index.html">Gallery 2</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-panpie_gallery_category menu-item-4526"><a href="../gallery-category/burger/index.html">Gallery Archive</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4135"><a href="../miscellaneous/index.html">Miscellaneous</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-601"><a href="#">Team Page</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1351"><a href="../team-layout-1/index.html">Team Layout 1</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1350"><a href="../team-layout-2/index.html">Team Layout 2</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-panpie_team_category menu-item-4513"><a href="../team-category/teams/index.html">Team Archive</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-panpie_team menu-item-4512"><a href="../team/james-gandolfini/index.html">Team Single</a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-600"><a href="#">Event Page</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1349"><a href="../event-layout-1/index.html">Event Layout 1</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1348"><a href="../event-layout-2/index.html">Event Layout 2</a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-panpie_event_category menu-item-4563"><a href="../event-category/events/index.html">Event Archive</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-panpie_event menu-item-4583"><a href="../event/sienna-private-dining-room-9/index.html">Event Single</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-287"><a href="#">BLOG</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="../blog/index.html">Blog 1</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-73"><a href="../blog-2/index.html">Blog 2</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-79"><a href="../chicken-strips-with-new-ingridents-made/index.html">Single Blog</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3581"><a href="#">Element</a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3663"><a href="../section-title/index.html">Section Title</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3676"><a href="../contact-address/index.html">Contact Address</a></li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3582"><a href="#">Info Box</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3587"><a href="../info-box-1/index.html">Info Box 1</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3586"><a href="../info-box-2/index.html">Info Box 2</a></li>
+		</ul>
+</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3703"><a href="#">Counter Layout</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3705"><a href="../counter-1/index.html">Counter 1</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3704"><a href="../counter-2/index.html">Counter 2</a></li>
+		</ul>
+</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3961"><a href="#">Call To Action</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3964"><a href="../call-to-action-1/index.html">Call To Action 1</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3963"><a href="../call-to-action-2/index.html">Call To Action 2</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3962"><a href="../call-to-action-3/index.html">Call To Action 3</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4960"><a href="../call-to-action-4/index.html">Call To Action 4</a></li>
+		</ul>
+</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3664"><a href="#">Text With Button</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3662"><a href="../text-with-button-1/index.html">Text With Button 1</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3661"><a href="../text-with-button-2/index.html">Text With Button 2</a></li>
+		</ul>
+</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3583"><a href="#">Testimonial Layout</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3585"><a href="../testimonial-1/index.html">Testimonial 1</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3584"><a href="../testimonial-2/index.html">Testimonial 2</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3633"><a href="../testimonial-grid/index.html">Testimonial Grid</a></li>
+		</ul>
+</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3629"><a href="#">Post Layout</a>
+		<ul class="sub-menu">
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3632"><a href="../post-grid-1/index.html">Post Grid 1</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3631"><a href="../post-grid-2/index.html">Post Grid 2</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3630"><a href="../post-grid-3/index.html">Post Grid 3</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28"><a href="#">SHOP</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3327"><a href="../shop/index.html">Shop</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1609"><a href="../cart/index.html">Cart</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1608"><a href="../checkout/index.html">Checkout</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-1611"><a href="../product/bbq-pizza-tintin-2/index.html">BBQ Pizza TinTin</a></li>
+</ul>
+</li>
+</ul></nav>        </div>
+    </div>
+
+</div>
+
+
+				<div class="elementor-element elementor-element-2f5bd92 animated-slow elementor-absolute elementor-hidden-tablet elementor-hidden-phone elementor-invisible elementor-widget elementor-widget-image" data-id="2f5bd92" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="140" height="122" src="{% static '/wp-content/uploads/2021/01/shape27.png' %}" class="attachment-full size-full wp-image-3225 wp-post-image" alt="" />													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column  elementor-top-column elementor-element elementor-element-204fd69" data-id="204fd69" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-bfdb344 elementor-widget elementor-widget-rt-title" data-id="bfdb344" data-element_type="widget" data-widget_type="rt-title.default">
+				<div class="elementor-widget-container">
+			<div class="sec-title style2">
+	<div class="sec-title-holder dev">
+
+
+<!-- Pills navs -->
+
+<!-- Pills content -->
+<div class="tab-content w-25 d-flex justify-content-center">
+  <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+    <form method="POST" action="/login/">
+		{% csrf_token %}
+		<div class="container-fluid bg " style="padding-left:170%">
+	<div class="  d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Sign In</h3>
+				<div class="d-flex justify-content-end social_icon">
+					<span><i class="fab fa-facebook-square"></i></span>
+					<span><i class="fab fa-google-plus-square"></i></span>
+					<span><i class="fab fa-twitter-square"></i></span>
+				</div>
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-user"></i></span>
+						</div>
+						<input type="text" name="username" class="form-control" placeholder="username">
+
+					</div>
+					<div class="input-group form-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"><i class="fas fa-key"></i></span>
+						</div>
+						<input type="password" class="form-control" name="password" placeholder="password">
+					</div>
+					<div class="row align-items-center remember">
+						<input type="checkbox">Remember Me
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Login" class="btn float-right login_btn">
+					</div>
+				</form>
+			</div>
+			<div class="card-footer">
+				<div class="d-flex justify-content-center links">
+					Don't have an account?<a href="/register/">Sign Up</a>
+				</div>
+				<div class="d-flex justify-content-center">
+					<a href="#">Forgot your password?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--		<div class="container"> <div class="row"> <div class="col-md-6"> <div class="card"> <form onsubmit="event.preventDefault()" class="box"> <h1>Login</h1> <p class="text-muted"> Please enter your login and password!</p> <input type="text" name="" placeholder="Username"> <input type="password" name="" placeholder="Password"> <a class="forgot text-muted" href="#">Forgot password?</a> <input type="submit" name="" value="Login" href="#"> <div class="col-md-12"> <ul class="social-network social-circle"> <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li> <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li> <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li> </ul> </div> </form> </div> </div> </div>-->
+<!--</div>-->
+
+
+    </form>
+  </div>
+</div>
+{% endblock %}

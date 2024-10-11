@@ -1,0 +1,41 @@
+<!-- templates/create_product.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Product</title>
+    <script>
+        function addImageField() {
+            const imageFieldContainer = document.getElementById('image-field-container');
+            const newImageField = document.createElement('input');
+            newImageField.type = 'file';
+            newImageField.name = 'images';
+            imageFieldContainer.appendChild(newImageField);
+        }
+    </script>
+</head>
+<body>
+    <h1>Create Product</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+        </p>
+        <p>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+        </p>
+        <p>
+            <label for="price">Price:</label>
+            <input type="number" step="0.01" id="price" name="price">
+        </p>
+        <div id="image-field-container">
+            <label for="images">Images:</label>
+            <input type="file" name="images" multiple>
+        </div>
+        <button type="button" onclick="addImageField()">Add another image</button>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

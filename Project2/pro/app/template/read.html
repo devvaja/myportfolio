@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<table  style="border:1px solid black">-->
+<!--    <thead>-->
+<!--    <tr  style="border:1px solid black">-->
+<!--                <th  style="border:1px solid black">no</th>-->
+
+<!--        <th  style="border:1px solid black">username</th>-->
+<!--        <th   style="border:1px solid black">firstname</th>-->
+<!--        <th  style="border:1px solid black">lastname</th>-->
+<!--        <th  style="border:1px solid black">enrollment</th>-->
+<!--        <th  style="border:1px solid black">div</th>-->
+<!--        <th  style="border:1px solid black">email</th>-->
+<!--        <th  style="border:1px solid black">contact</th>-->
+<!--        <th  style="border:1px solid black">dob</th>-->
+<!--        <th  style="border:1px solid black">address</th>-->
+<!--        <th  style="border:1px solid black">city</th>-->
+<!--        <th  style="border:1px solid black">pin</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    {% for i in s1 %}-->
+<!--    <tr  style="border:1px solid black">-->
+<!--        <td  style="border:1px solid black">{{forloop.counter}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.username}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.firstname}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.lastname}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.enrollment}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.div}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.email}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.contact}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.dob}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.address}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.city}}</td>-->
+<!--        <td  style="border:1px solid black">{{i.pin}}</td>-->
+<!--    </tr>-->
+<!--    {% endfor %}-->
+<!--    </tbody>-->
+<!--</table>-->
+<!--<table>-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>No</th>-->
+<!--        <th>article_title</th>-->
+<!--        <th>author_name</th>-->
+<!--        <th>company</th>-->
+<!--        <th>dateOfCreation</th>-->
+<!--        <th>email</th>-->
+<!--        <th>contact</th>-->
+<!--        <th>city</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    {% for i in a1 %}-->
+<!--    <tr>-->
+<!--        <td>{{forloop.counter}}</td>-->
+<!--        <td>{{i.article_title}}</td>-->
+<!--        <td>{{i.author_name}}</td>-->
+<!--        <td>{{i.company}}</td>-->
+<!--        <td>{{i.dateOfCreation}}</td>-->
+<!--        <td>{{i.email}}</td>-->
+<!--        <td>{{i.contact}}</td>-->
+<!--        <td>{{i.city}}</td>-->
+<!--    </tr>-->
+<!--    {% endfor %}-->
+<!--    </tbody>-->
+<!--</table>-->
+<table>
+    <thead>
+    <tr>
+        <th>no</th>
+        <th>Player name</th>
+        <th>dob</th>
+        <th>height</th>
+        <th>weight</th>
+        <th>participation_date</th>
+        <th>collage</th>
+        <th>email</th>
+        <th>contact</th>
+        <th>city</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in p %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.dob}}</td>
+        <td>{{i.height}}</td>
+        <td>{{i.weight}}</td>
+        <td>{{i.participation_date}}</td>
+        <td>{{i.collage}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.contact}}</td>
+        <td>{{i.city}}</td>
+        <td><a>Edit</a>
+            <a href="/delete/{{i.id}}/">delete</a>
+            <a href="/update/{{i.id}}/">update</a>
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+<center><a href="/create/">Insert New data</a></center>
+</body>
+</html>

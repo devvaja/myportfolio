@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center">Payment</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Booking Details
+                </div>
+                <div class="card-body">
+                    <p><strong>Name:</strong> {{ fname }}</p>
+                    <p><strong>Email:</strong> {{ email }}</p>
+                    <p><strong>Hotel/Room:</strong> {{ hotel.name }}</p>
+                    <p><strong>Check-in Date:</strong> {{ check_in_date }}</p>
+                    <p><strong>Check-out Date:</strong> {{ check_out_date }}</p>
+                    <p><strong>Total Price:</strong> ₹{{ total_price }}</p>
+                    
+                    <!-- Here you can place the payment button from your payment provider -->
+                    <form action="{% url 'process_payment' %}" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name="total_price" value="{{ total_price }}">
+                        <button type="submit" class="btn btn-primary btn-block">Proceed to Payment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div>
+        <label>Player_name</label>
+        <input type="text" name="name" value="{{p.name}}">
+    </div>
+    <div>
+        <label>dob</label>
+        <input type="date" name="dob" value="{{p.dob}}">
+    </div>
+    <div>
+        <label>height</label>
+        <input type="number" name="height" value="{{p.height}}">
+    </div>
+    <div>
+        <label>weight</label>
+        <input type="number" name="weight" value="{{p.weight}}">
+    </div>
+    <div>
+        <label>participation_date</label>
+        <input type="date" name="participation_date" value="{{p.participation_date}}">
+    </div>
+    <div>
+        <label>collage</label>
+        <input type="text" name="collage" value="{{p.collage}}">
+    </div>
+    <div>
+        <label>email</label>
+        <input type="email" name="email" value="{{p.email}}">
+    </div>
+    <div>
+        <label>contact</label>
+        <input type="number" name="contact" value="{{p.contact}}">
+    </div>
+    <div>
+        <label>city</label>
+        <input type="text" name="city" value="{{p.city}}">
+    </div>
+    <button type="submit">Submit</button>
+
+</form>
+</body>
+</html>

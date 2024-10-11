@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+  <!-- Room Image Carousel -->
+  <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ room.image.url }}" class="d-block w-100" alt="Room Image 1">
+      </div>
+      <!-- Additional images if present -->
+      {% if room.image2 %}
+      <div class="carousel-item">
+        <img src="{{ room.image2.url }}" class="d-block w-100" alt="Room Image 2">
+      </div>
+      {% endif %}
+      {% if room.image3 %}
+      <div class="carousel-item">
+        <img src="{{ room.image3.url }}" class="d-block w-100" alt="Room Image 3">
+      </div>
+      {% endif %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <!-- Room Details -->
+  <div class="row mt-4">
+    <div class="col-md-8">
+      <h2 class="mb-3">{{ room.name }}</h2>
+      <span class="badge bg-primary mb-3">₹ {{ room.price }} / night</span>
+
+      <!-- Amenities Section -->
+      <h4>Amenities</h4>
+      <div class="d-flex flex-wrap">
+        <div class="amenity-item me-4 mb-2" data-bs-toggle="tooltip" title="Free High-Speed Wi-Fi">
+          <i class="fas fa-wifi fa-2x"></i>
+        </div>
+        <div class="amenity-item me-4 mb-2" data-bs-toggle="tooltip" title="Flat-screen TV with cable">
+          <i class="fas fa-tv fa-2x"></i>
+        </div>
+        <div class="amenity-item me-4 mb-2" data-bs-toggle="tooltip" title="Air Conditioning">
+          <i class="fas fa-snowflake fa-2x"></i>
+        </div>
+        <!-- Add more amenities as needed -->
+      </div>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="col-md-4">
+      <div class="card p-4 shadow-lg">
+        <h4>Ready to Book?</h4>
+        <p>Reserve your room now and enjoy a comfortable stay.</p>
+
+        <form method="post">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="{{ user.first_name }}" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" value="{{ user.email }}" required>
+          </div>
+          <div class="mb-3">
+            <label for="check_in" class="form-label">Check-in Date</label>
+            <input type="date" class="form-control" id="check_in" name="check_in" required>
+          </div>
+          <div class="mb-3">
+            <label for="check_out" class="form-label">Check-out Date</label>
+            <input type="date" class="form-control" id="check_out" name="check_out" required>
+          </div>
+          <div class="mb-3">
+            <label for="customers" class="form-label">Number of Customers</label>
+            <input type="number" class="form-control" id="customers" name="customers" required>
+          </div>
+          <div class="mb-3">
+            <label for="rooms" class="form-label">Number of Rooms</label>
+            <input type="number" class="form-control" id="rooms" name="rooms" value="1" min="1" required>
+          </div>
+          <div class="mb-3">
+            <label for="number" class="form-label">Contact Number</label>
+            <input type="text" class="form-control" id="number" name="number" required>
+          </div>
+          <button class="btn btn-success btn-book w-100" type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5">
+  <h1>Booking Confirmation</h1>
+  <p>Thank you, {{ booking.name }}! Your room at {{ booking.hotel.name }} has been successfully booked.</p>
+
+  <ul>
+    <li>Check-in Date: {{ booking.check_in }}</li>
+    <li>Check-out Date: {{ booking.check_out }}</li>
+    <li>Number of Customers: {{ booking.customers }}</li>
+    <li>Rooms Booked: {{ booking.rooms }}</li>
+    <li>Total Price: ₹ {{ booking.rooms|multiply:booking.hotel.price }}</li>
+  </ul>
+
+  <a href="/" class="btn btn-primary">Return to Home</a>
+</div>
+{% endblock %}

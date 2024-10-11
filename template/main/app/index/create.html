@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="" method="POST">
+    {% csrf_token %}
+    <div>
+        <label> organization</label>
+        <input type="text" name="organization">
+    </div>
+     <div>
+        <label> leader</label>
+        <input type="text" name="leader">
+    </div>
+     <div>
+        <label> advisor</label>
+        <input type="text" name="advisor">
+    </div>
+     <div>
+        <label> destination</label>
+        <input type="text" name="destination">
+    </div>
+     <div>
+        <label> date</label>
+        <input type="date" name="date">
+    </div>
+     <div>
+        <label> email</label>
+        <input type="email" name="email">
+    </div>
+     <div>
+        <label> contact</label>
+        <input type="number" name="contact">
+    </div>
+     <div>
+        <label> city</label>
+        <input type="text" name="city">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

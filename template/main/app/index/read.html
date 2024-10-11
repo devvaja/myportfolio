@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>NO</th>
+        <th>organization</th>
+        <th>leader</th>
+        <th>advisor</th>
+        <th>destination</th>
+        <th>date</th>
+        <th>email</th>
+        <th>contact</th>
+        <th>city</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for i in t %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{i.organization}}</td>
+        <td>{{i.leader}}</td>
+        <td>{{i.advisor}}</td>
+        <td>{{i.destination}}</td>
+        <td>{{i.date}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.contact}}</td>
+        <td>{{i.city}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
